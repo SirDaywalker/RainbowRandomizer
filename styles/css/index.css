@@ -1,0 +1,211 @@
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-color: black;
+}
+
+#opPic {
+  height: 500px;
+  width: 300px;
+  border: 2px white;
+}
+
+#icon {
+  top: 50%;
+  left: 50%;
+  margin-top: -77px;
+  margin-left: -50px;
+  height: 101px;
+  width: 101px;
+}
+
+.Pics {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -432px;
+  margin-left: -148px;
+}
+
+.ButtonContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -480px;
+  margin-left: -40px;
+}
+
+.Shuffle {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid white;
+  z-index: 1;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+}
+
+.Shuffle:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Shuffle:hover {
+  color: black;
+}
+
+.Shuffle:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+.switch-toggle {
+  float: left;
+  background: #242729;
+}
+
+.switch-toggle input {
+  position: fixed;
+  opacity: 0;
+}
+
+.switch-toggle input + label {
+  padding: 7px;
+  float: left;
+  cursor: pointer;
+}
+
+.switch-toggle input:checked + label {
+  background: green;
+}
+
+.lineUp {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  margin-top: 170px;
+  margin-left: -523.5px;
+  position: absolute;
+}
+
+.box {
+  width: 300px;
+  margin: 0 20px;
+  border: 5px solid #ffffff;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.LoadoutH::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: white;
+  margin: 10px auto;
+  opacity: 0.35;
+}
+
+.gadgetH::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: white;
+  margin: 10px auto;
+}
+
+.filter {
+  width: 178.98;
+  height: auto;
+  padding-top: 47px;
+}
+
+#filterHeading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+#filterText {
+  padding: 0;
+  margin: 0;
+}
+
+.filterImg {
+  height: 51;
+  width: 51;
+}
+
+.UpperLeft {
+  height: auto;
+  width: 210px;
+  top: 1%;
+  left: 1%;
+  margin-top: 0px;
+  margin-left: 0px;
+  position: absolute;
+}
+
+.switch {
+  position: absolute;
+}
+
+.Imgs {
+  margin: 15px;
+}
+
+.OpNameBox {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-top: 68px;
+  margin-left: -148px;
+  height: auto;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#OpName {
+  padding: 7px;
+  margin: 0;
+}
+/*# sourceMappingURL=index.css.map */

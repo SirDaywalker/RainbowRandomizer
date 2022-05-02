@@ -1,0 +1,41 @@
+@import "settings";
+@import "images";
+@import "button";
+@import "switch";
+@import "boxes";
+@import "filter";
+
+.UpperLeft{
+    height: auto;
+    width: 210px;
+    top: 1%;
+    left: 1%;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+}
+
+.switch{
+    position: absolute;
+}
+
+.Imgs{
+    margin: 15px;
+}
+
+.OpNameBox{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-top: 68px;
+    margin-left: -148px;
+    height: auto;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#OpName{
+    padding: 7px;
+    margin: 0;
+}

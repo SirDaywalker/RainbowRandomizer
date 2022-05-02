@@ -1,0 +1,487 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/css/index.css">
+        <link rel="shortcut icon" href="./images/RainbowSixSymbol.png" />
+
+        <script src="./index.js"></script>
+        <title>Rainbow Six Siege Randomizer</title>
+    </head>
+    
+    <body>
+        <div class="UpperLeft">
+            <div class="switch">
+                <div class="switch-toggle switch-3 switch-candy">
+
+                    <input id="atk" name="state-d" type="radio"/>
+                    <label for="atk" onclick="">Attack</label>
+                
+                    <input id="both" name="state-d" type="radio" checked="checked" />
+                    <label for="both" class="disabled" onclick="">Both</label>
+                
+                    <input id="def" name="state-d" type="radio" />
+                    <label for="def" onclick="">Defense</label>
+                
+                </div>
+            </div>
+
+            <!-- Filter -->
+            <div class="filter">
+                <h1 id="filterHeading">Filter</h1>
+                <p id="filterText">disable Operators</p>
+                <tbody>
+                    <!-- atk -->
+                    <tr>
+                        <td>Attack Recruit</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/AtkRecruit.png" alt="Attack Recruit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sledge</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/sledge.png" alt="Sledge">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thatcher</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/thatcher.png" alt="Thatcher">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ash</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/ash.png" alt="Ash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thermite</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/thermite.png" alt="Thermite">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Twitch</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/twitch.png" alt="Twitch">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Montagne</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/montagne.png" alt="Montagne">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Glaz</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/glaz.png" alt="Glaz">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fuze</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/fuze.png" alt="Fuze">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blitz</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/blitz.png" alt="Blitz">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IQ</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/iq.png" alt="IQ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Buck</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/buck.png" alt="Buck">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blackbeard</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/blackbeard.png" alt="Blackbeard">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Capitão</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/capitão.png" alt="Capitão">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hibana</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/hibana.png" alt="Hibana">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jackal</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/jackal.png" alt="Jackal">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ying</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/ying.png" alt="Ying">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zofia</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/zofia.png" alt="Zofia">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dokkaebi</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/dokkaebi.png" alt="Dokkaebi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lion</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/lion.png" alt="Lion">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Finka</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/finka.png" alt="Finka">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maverick</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/maverick.png" alt="Maverick">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nomad</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/nomad.png" alt="Nomad">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gridlock</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/gridlock.png" alt="Gridlock">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nøkk</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/nøkk.png" alt="Nøkk">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amaru</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/amaru.png" alt="Amaru">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kali</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/kali.png" alt="Kali">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Iana</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/iana.png" alt="Iana">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ace</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/ace.png" alt="Ace">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zero</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/zero.png" alt="Zero">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Flores</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/flores.png" alt="Flores">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Osa</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/osa.png" alt="Osa">
+                        </td>
+                    </tr>
+                    <!-- end of atk -->
+                    <tr>
+                        <td>---------------</td>
+                    </tr>
+                    <!-- def -->
+                    <tr>
+                        <td>Defend Recruit</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/DefRecruit.png" alt="Defend Recruit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Smoke</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/smoke.png" alt="Smoke">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mute</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/mute.png" alt="Mute">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Castle</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/castle.png" alt="Castle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pulse</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/pulse.png" alt="Pulse">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Doc</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/doc.png" alt="Doc">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rook</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/rook.png" alt="Rook">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kapkan</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/kapkan.png" alt="Kapkan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tachanka</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/tachanka.png" alt="Tachanka">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jäger</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/jäger.png" alt="Jäger">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bandit</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/bandit.png" alt="Bandit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Frost</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/frost.png" alt="Frost">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Valkyrie</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/valkyrie.png" alt="Valkyrie">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caveira</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/caveira.png" alt="Caveira">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Echo</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/echo.png" alt="Echo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mira</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/mira.png" alt="Mira">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lesion</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/lesion.png" alt="Lesion">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ela</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/ela.png" alt="Ela">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vigil</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/vigil.png" alt="Vigil">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maestro</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/maestro.png" alt="Maestro">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alibi</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/alibi.png" alt="Alibi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Clash</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/clash.png" alt="Clash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kaid</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/kaid.png" alt="Kaid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mozzie</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/mozzie.png" alt="Mozzie">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Warden</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/warden.png" alt="Warden">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Goyo</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/goyo.png" alt="Goyo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wamai</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/wamai.png" alt="Wamai">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oryx</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/oryx.png" alt="Oryx">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Melusi</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/melusi.png" alt="Melusi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Aruni</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/aruni.png" alt="Aruni">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thunderbird</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/thunderbird.png" alt="Thunderbird">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thorn</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/thorn.png" alt="Thorn">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Azami</td>
+                        <td>
+                            <img class="filterImg" src="./images/icons/azami.png" alt="Azami">
+                        </td>
+                    </tr>
+                    <!-- end of def -->
+                </tbody>
+            </div>
+            <!-- Filter end -->
+        </div>
+
+        <div class="ButtonContainer">
+            <button class="Shuffle" onclick="go()">
+                Shuffle
+            </button>
+        </div>
+        
+        <div class="Imgs">
+            <div></div>
+            <img class="Pics" id="opPic" src="./images/Ops/default.png" alt="">  
+            <img class="Pics" id="icon" src="./images/icons/default.png" alt="">
+        </div>
+
+        <div class="OpNameBox">
+            <h1 class="OpName" id="OpName"></h1>
+        </div>  
+
+        <section class="lineUp">
+            <div class="box" id="primaryBox">
+                <h2 class="LoadoutH" id="primary"></h2>
+                <h4 class="AttachmentsH" id="Grip"></h4>
+                <h4 class="AttachmentsH" id="Scope"></h4>
+                <h4 class="AttachmentsH" id="Barrel"></h4>
+                <h4 class="AttachmentsH" id="UnderBarrel"></h4>
+            </div>
+
+            <div class="box" id="secondaryBox"> 
+                <h2 class="LoadoutH" id="secondary"></h2>
+                <h4 class="AttachmentsH" id="SecondaryGrip"></h4>
+                <h4 class="AttachmentsH" id="SecondaryScope"></h4>
+                <h4 classs="AttachmentsH" id="SecondaryBarrel"></h4>
+                <h4 class="AttachmentsH" id="SecondaryUnderBarrel"></h4>
+            </div>
+
+            <div class="box" id="getTakBox">
+                <h2 class="gadgetH" id="gadget"></h2>
+                <h2 class="TaktikH" id="TaktikH"></h2>
+            </div>
+        </section>
+
+        <div class="Message">
+            <h6>
+                <!--massage -->
+            </h6>
+        </div>
+
+    </body>
+    </html>
+</html>
