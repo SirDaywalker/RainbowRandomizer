@@ -18,8 +18,8 @@ function go(){
     const taktik = shuffleArray[12]
 
     //images
-    document.getElementById("opPic").src="https://sirdaywalker.github.io/RainbowRandomizer/images/Ops/" + operator + ".png";
-    document.getElementById("icon").src="https://sirdaywalker.github.io/RainbowRandomizer/images/icons/" + operator + ".png";
+    document.getElementById("opPic").src="./images/Ops/" + operator + ".png";
+    document.getElementById("icon").src="./images/icons/" + operator + ".png";
 
     //anzeigen
     if (operator.includes("Recruit")) {
