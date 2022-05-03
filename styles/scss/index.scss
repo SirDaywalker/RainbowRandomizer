@@ -4,16 +4,7 @@
 @import "switch";
 @import "boxes";
 @import "filter";
-
-.UpperLeft{
-    height: auto;
-    width: 210px;
-    top: 1%;
-    left: 1%;
-    margin-top: 0px;
-    margin-left: 0px;
-    position: absolute;
-}
+@import "dropdown";
 
 .switch{
     position: absolute;
