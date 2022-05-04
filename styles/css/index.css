@@ -152,28 +152,6 @@ body {
   margin: 10px auto;
 }
 
-.filter {
-  width: 178.98;
-  height: auto;
-  padding-top: 47px;
-}
-
-#filterHeading {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 4px;
-}
-
-#filterText {
-  padding: 0;
-  margin: 0;
-}
-
-.filterImg {
-  height: 51;
-  width: 51;
-}
-
 .show {
   background: none;
   border: none;
@@ -223,6 +201,12 @@ body {
       grid-template-columns: repeat(2, -webkit-max-content);
       grid-template-columns: repeat(2, max-content);
   gap: 1rem;
+  overflow-y: scroll;
+}
+
+.filterImg {
+  height: 51;
+  width: 51;
 }
 
 .switch {
@@ -248,5 +232,23 @@ body {
 #OpName {
   padding: 7px;
   margin: 0;
+}
+
+.outer {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.outer {
+  width: 100%;
+  -layout: fixed;
+}
+
+.outer th {
+  text-align: left;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
 }
 /*# sourceMappingURL=index.css.map */

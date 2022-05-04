@@ -18,8 +18,8 @@ function go(){
     const taktik = shuffleArray[12]
 
     //images
-    document.getElementById("opPic").src="./images/Ops/" + operator + ".png";
-    document.getElementById("icon").src="./images/icons/" + operator + ".png";
+    document.getElementById("opPic").src="../images/Ops/" + operator + ".png";
+    document.getElementById("icon").src="../images/icons/" + operator + ".png";
 
     //anzeigen
     if (operator.includes("Recruit")) {
@@ -1525,7 +1525,7 @@ function shuffle() {
                     SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
 
-                case "SMG11":
+                case "SMG-11":
                     SecondaryGrip = randomizeLoadout(GripArray.slice(0, 2)[random(GripArray.slice(0, 2).length)])
                     SecondaryScope = randomizeLoadout(SecondaryScopeArray[random(SecondaryScopeArray.length)])
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
@@ -1567,7 +1567,7 @@ function shuffle() {
                     SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
 
-                case "SMG11":
+                case "SMG-11":
                     SecondaryGrip = randomizeLoadout(GripArray.slice(0, 2)[random(GripArray.slice(0, 2).length)])
                     SecondaryScope = randomizeLoadout(SecondaryScopeArray[random(SecondaryScopeArray.length)])
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
@@ -2640,10 +2640,10 @@ function shuffle() {
                     break
 
                 case "SPAS-15":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("Q-929", "Bearing 9")

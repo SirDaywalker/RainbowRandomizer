@@ -34,8 +34,16 @@
     pointer-events: auto;
 }
 
+
+//-------------------------------------content-----------------------------------------//
 .filterContent {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 1rem;
+    overflow-y: scroll;
+}
+
+.filterImg{
+    height: 51;
+    width: 51;
 }
