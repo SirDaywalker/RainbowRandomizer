@@ -18,8 +18,8 @@ function go(){
     const taktik = shuffleArray[12]
 
     //images
-    document.getElementById("opPic").src="../images/Ops/" + operator.toLowerCase() + ".png";
-    document.getElementById("icon").src="../images/icons/" + operator.toLowerCase() + ".png";
+    document.getElementById("opPic").src="./images/Ops/" + operator.toLowerCase() + ".png";
+    document.getElementById("icon").src="./images/icons/" + operator.toLowerCase() + ".png";
 
     //anzeigen
     if (operator.includes("Recruit")) {
