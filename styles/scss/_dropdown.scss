@@ -45,6 +45,9 @@
 }
 
 .filterImg{
-    height: 51;
-    width: 51;
+    height: 51px;
+    width: 51px;
+    &:hover{
+        cursor: pointer;
+    }
 }

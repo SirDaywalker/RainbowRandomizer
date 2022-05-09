@@ -218,8 +218,12 @@ body *::-webkit-scrollbar-thumb {
 }
 
 .filterImg {
-  height: 51;
-  width: 51;
+  height: 51px;
+  width: 51px;
+}
+
+.filterImg:hover {
+  cursor: pointer;
 }
 
 .switch {
@@ -245,23 +249,5 @@ body *::-webkit-scrollbar-thumb {
 #OpName {
   padding: 7px;
   margin: 0;
-}
-
-.outer {
-  overflow-y: auto;
-  height: 300px;
-}
-
-.outer {
-  width: 100%;
-  -layout: fixed;
-}
-
-.outer th {
-  text-align: left;
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  background-color: white;
 }
 /*# sourceMappingURL=index.css.map */
