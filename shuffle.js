@@ -1847,10 +1847,10 @@ function shuffle() {
             Primary = randomizeLoadout("M870", "416-C Carbine")
             switch (Primary){
                 case "M870":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
 
                 case "416-C Carbine":
@@ -2185,7 +2185,7 @@ function shuffle() {
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("C75 Auto", "SMG-12")
@@ -2531,10 +2531,10 @@ function shuffle() {
                     break
 
                 case "SPAS-12":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("Bailiff 410", "USP40")
@@ -2773,12 +2773,8 @@ function taktik() {
     }
     //both
     if (getValue() === 0) {
-        return ["! ! DONT SHOOT ! !", "Knife Only", "Knife Only", "Dont go into the Site", "Dont go into the Site", "Holo D", "Holo D", "Holo D",
-                "Secondary Only", "Secondary Only", "Secondary Only", "Secondary Only", "Secondary Only", "Only Run Out Kills", "Only Run Out Kills",
-                 "Primary Only", "Primary Only", "Primary Only", "Primary Only","Primary Only", "Primary Only", "Primary Only", "Primary Only",
-                 "TeeBag all the time", "TeeBag all the time", "TeeBag all the time", "Full Time ADS", "Full Time ADS", "Full Time ADS", 
-                 "Full Time ADS",  "Q and E spam all the time", "Q and E spam all the time", "Q and E spam all the time", "Q and E spam all the time",
-                 "Q and E spam all the time", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
+        return ["! ! DONT SHOOT ! !", "Knife Only", "Dont go into the Site", "Holo D","Secondary Only", "Only Run Out Kills", "Primary Only",
+                 "TeeBag all the time", "Full Time ADS", "Q and E spam all the time", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", ]
     }
