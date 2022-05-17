@@ -24,6 +24,11 @@ function go(){
     //anzeigen
     if (operator.includes("Recruit")) {
         operator = operator.substring(3, operator.length)
+        taktik = "The whole Team has to play Recruit!"
+    }
+
+    if (operator === "Gridlock" && random(5) === 5|| operator === "Nomad" && random(5) === 5) {
+        taktik = "Oink Oink! Play the Gridlock Nomad Combi"
     }
 
     writeById("OpName", operator)
@@ -2107,10 +2112,10 @@ function shuffle() {
             Primary = randomizeLoadout("SIX12 SD", "T-5 SMG")
             switch (Primary){
                 case "SIX12 SD":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
 
                 case "T-5 SMG":
@@ -2774,7 +2779,7 @@ function taktik() {
     //both
     if (getValue() === 0) {
         return ["! ! DONT SHOOT ! !", "Knife Only", "Dont go into the Site", "Holo D","Secondary Only", "Only Run Out Kills", "Primary Only",
-                 "TeeBag all the time", "Full Time ADS", "Q and E spam all the time", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
+                 "TeeBag all the time", "Full Time ADS", "Q and E spam all the time", "Hipfire Only", "Quickscopes Only", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", ]
     }

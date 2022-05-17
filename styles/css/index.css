@@ -224,6 +224,23 @@ body *::-webkit-scrollbar-thumb {
 
 .filterImg:hover {
   cursor: pointer;
+  height: 55px;
+  width: 55px;
+}
+
+.filterImgDis {
+  height: 40px;
+  width: 40px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.filterImgDis:hover {
+  cursor: pointer;
+}
+
+.filterName {
+  padding-top: 5px;
 }
 
 .switch {
