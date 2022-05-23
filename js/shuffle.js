@@ -1258,7 +1258,7 @@ function shuffle() {
                     SecondaryScope = ""
                     SecondaryUnderBarrel = ""
                     SecondaryBarrelArray = ["no Barrel", "Suppressor"]
-                    SecondaryBarrel = ""
+                    SecondaryBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
             Gadget = randomizeLoadout("Breach Charge", "Claymore")
@@ -2248,7 +2248,7 @@ function shuffle() {
                     SecondaryGrip = ""
                     SecondaryScope = ""
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = ""
                     break
             }
             Gadget = randomizeLoadout("Barbed Wire", "Impact Grenade")
@@ -2289,7 +2289,7 @@ function shuffle() {
                     SecondaryGrip = ""
                     SecondaryScope = ""
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = ""
                     break
             }
             Gadget = randomizeLoadout("Deployable Shield", "Impact Grenade")
