@@ -2032,7 +2032,7 @@ function shuffle() {
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
 
                 case "MP5SD":
@@ -2779,7 +2779,7 @@ function taktik() {
     //both
     if (getValue() === 0) {
         return ["! ! DONT SHOOT ! !", "Knife Only", "Dont go into the Site", "Holo D","Secondary Only", "Only Run Out Kills", "Primary Only",
-                 "TeeBag all the time", "Full Time ADS", "Q and E spam all the time", "Hipfire Only", "Quickscopes Only", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
+                 "TeeBag all the time", "Full Time ADS", "Q and E spam all the time", "Hipfire Only", "OneTap Only", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", ]
     }
