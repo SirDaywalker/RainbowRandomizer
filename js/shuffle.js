@@ -2778,7 +2778,7 @@ function taktik() {
     }
     //both
     if (getValue() === 0) {
-        return ["! ! DONT SHOOT ! !", "Knife Only", "Dont go into the Site", "Holo D","Secondary Only", "Only Run Out Kills", "Primary Only",
+        return ["! ! DONT SHOOT ! !", "Knife Only", "Dont go into the Site", "Holo D","Secondary Only", "Only Run Out Kills", "Primary Only", "Controller Only",
                  "TeeBag all the time", "Full Time ADS", "Q and E spam all the time", "Hipfire Only", "OneTap Only", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", ]
