@@ -108,7 +108,7 @@ function shuffle() {
     let Scopes3 = ["Scope 3x"]
     let Scopes2 = ["Scope 2x"]
     let Scopes1_5 =["Scope 1.5x"]
-    let ScopeRefelxD = ["Reflex D"]
+    let ScopeReflexD = ["Reflex D"]
     let BarrelArray = ["no Barrel", "Suppressor", "Muzzle Brake", "Compensator", "Flash Hider"]
     let SniperBarrelArray = ["no Barrel", "Suppressor", "Muzzle Brake", "Flash Hider"]
     let extendedBarrel =["extended Barrel"]
@@ -1516,9 +1516,11 @@ function shuffle() {
             Primary = randomizeLoadout("FMG-9", "M590A1")
             switch (Primary){
                 case "FMG-9":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
@@ -1558,7 +1560,8 @@ function shuffle() {
             Primary = randomizeLoadout("MP5K", "M590A1")
             switch (Primary){
                 case "MP5K":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
@@ -1601,8 +1604,10 @@ function shuffle() {
             switch (Primary){
                 case "UMP45":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
@@ -1642,16 +1647,18 @@ function shuffle() {
             switch (Primary){
                 case "UMP45":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "M1014":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("5.7 USG", "M45 MEUSOC")
@@ -1682,24 +1689,30 @@ function shuffle() {
             Primary = randomizeLoadout("SG-CQB", "MP5", "P90")
             switch (Primary){
                 case "MP5":
+                    GripArray = GripArray.slice(0 ,2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "P90":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "SG-CQB":
+                    GripArray = GripArray.slice(0 ,2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("P9", "LFP586")
@@ -1730,24 +1743,30 @@ function shuffle() {
             Primary = randomizeLoadout("SG-CQB", "MP5", "P90")
             switch (Primary){
                 case "MP5":
+                    GripArray = GripArray.slice(0 ,2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes2)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "P90":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "SG-CQB":
+                    GripArray = GripArray.slice(0 ,2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("P9", "LFP586")
@@ -1779,6 +1798,7 @@ function shuffle() {
             switch (Primary){
                 case "9×19VSN":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
@@ -1788,6 +1808,7 @@ function shuffle() {
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = ["no Barrel", "Suppressor"]
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -1826,10 +1847,11 @@ function shuffle() {
                     break
 
                 case "DP27":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
+                    ScopeArray = ScopeArray.concat(ScopeReflexD)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
-                    UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    UnderBarrel = ""
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("PMM", "GSh-18")
@@ -1867,9 +1889,11 @@ function shuffle() {
                     break
 
                 case "416-C Carbine":
+                    GripArray = GripArray.slice(0, 2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -1894,10 +1918,10 @@ function shuffle() {
             Primary = randomizeLoadout("M870", "MP7")
             switch (Primary){
                 case "M870":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
 
                 case "MP7":
@@ -1935,9 +1959,11 @@ function shuffle() {
                     break
 
                 case "9mm C1":
+                    GripArray = ["no Grip", "angled Grip"]
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = ["no Barrel", "Suppressor", "extended Barrel"]
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -1976,10 +2002,10 @@ function shuffle() {
                     break
 
                 case "SPAS-12":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("D-50")
@@ -2003,17 +2029,18 @@ function shuffle() {
             Primary = randomizeLoadout("M12", "SPAS-15")
             switch (Primary){
                 case "M12":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "SPAS-15":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("Luison")
@@ -2037,17 +2064,19 @@ function shuffle() {
             Primary = randomizeLoadout("SuperNova", "MP5SD")
             switch (Primary){
                 case "SuperNova":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = ""
+                    BarrelArray = ["no Barrel", "Suppressor"]
+                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "MP5SD":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("P229", "Bearing 9")
@@ -2079,17 +2108,19 @@ function shuffle() {
             Primary = randomizeLoadout("Vector .45 ACP", "ITA12L")
             switch (Primary){
                 case "Vector .45 ACP":
+                    GripArray = GripArray.slice(0, 2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "ITA12L":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("ITA12S", "USP40")
@@ -2127,7 +2158,7 @@ function shuffle() {
                     break
 
                 case "T-5 SMG":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
@@ -2164,6 +2195,7 @@ function shuffle() {
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = ["no Barrel", "Suppressor", "extended Barrel"]
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -2196,6 +2228,7 @@ function shuffle() {
 
                 case "BOSG.12.2":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes2_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = ""
@@ -2230,6 +2263,7 @@ function shuffle() {
             Primary = randomizeLoadout("ALDA 5.56", "ACS12")
             switch (Primary){
                 case "ALDA 5.56":
+                    GripArray = GripArray.slice(0, 2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
@@ -2238,9 +2272,10 @@ function shuffle() {
 
                 case "ACS12":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5, Scopes2)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("Bailiff 410", "Keratos .357")
@@ -2272,17 +2307,20 @@ function shuffle() {
             switch (Primary){
                 case "Mx4 Storm":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
-                case "ACS12":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
-                    Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
-                    UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
-                    break
+                    case "ACS12":
+                        Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                        ScopeArray = ScopeArray.concat(Scopes2)
+                        Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
+                        UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                        Barrel = ""
+                        break
             }
             Secondary = randomizeLoadout("Bailiff 410", "Keratos .357")
             switch (Secondary){
@@ -2348,6 +2386,7 @@ function shuffle() {
             switch (Primary){
                 case "AUG A3":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
@@ -2355,8 +2394,10 @@ function shuffle() {
 
                 case "TCSG12":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes2)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = ["no Barrel", "Suppressor"]
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -2396,8 +2437,10 @@ function shuffle() {
 
                 case "P10 RONI":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -2422,14 +2465,15 @@ function shuffle() {
             Primary = randomizeLoadout("M590A1", "MPX")
             switch (Primary){
                 case "M590A1":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
 
                 case "MPX":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
@@ -2463,16 +2507,20 @@ function shuffle() {
             Primary = randomizeLoadout("Vector .45 ACP", "TCSG12")
             switch (Primary){
                 case "Vector .45 ACP":
+                    GripArray = GripArray.slice(0, 2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "TCSG12":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes2)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = ["no Barrel", "Suppressor"]
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -2496,14 +2544,17 @@ function shuffle() {
             Primary = randomizeLoadout("AUG A2", "MP5K")
             switch (Primary){
                 case "AUG A2":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
+                    ScopeArray = ScopeArray.concat(Scopes2_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = ["no Barrel", "Suppressor", "Compensator", "Flash Hider"]
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "MP5K":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
@@ -2537,7 +2588,8 @@ function shuffle() {
             Primary = randomizeLoadout("T-5 SMG", "SPAS-12")
             switch (Primary){
                 case "T-5 SMG":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
@@ -2578,17 +2630,19 @@ function shuffle() {
             Primary = randomizeLoadout("MP5", "Super 90")
             switch (Primary){
                 case "MP5":
+                    GripArray = GripArray.slice(0 ,2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "Super 90":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("RG15")
@@ -2615,13 +2669,16 @@ function shuffle() {
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
 
                 case "Mk 14 EBR":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
@@ -2646,6 +2703,7 @@ function shuffle() {
             Primary = randomizeLoadout("Spear .308", "SPAS-15")
             switch (Primary){
                 case "Spear .308":
+                    GripArray = GripArray.slice(0, 2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
@@ -2695,10 +2753,10 @@ function shuffle() {
                     break
 
                 case "M870":
-                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    Grip = ""
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("1911 TACOPS", "C75 Auto")
@@ -2715,7 +2773,7 @@ function shuffle() {
                     SecondaryScope = ""
                     SecondaryUnderBarrel = ""
                     SecondaryBarrelArray = ["no Barrel", "Suppressor"]
-                    SecondaryBarrel = ""
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
             Gadget = randomizeLoadout("Barbed Wire", "Deployable Shield")
@@ -2738,9 +2796,10 @@ function shuffle() {
 
                 case "ACS12":
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
-                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    Barrel = ""
                     break
             }
             Secondary = randomizeLoadout("D-50")
