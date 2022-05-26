@@ -22,15 +22,6 @@ function go(){
     document.getElementById("icon").src="./images/icons/" + operator.toLowerCase() + ".png";
 
     //anzeigen
-    if (operator.includes("Recruit")) {
-        operator = operator.substring(3, operator.length)
-        taktik = "The whole Team has to play Recruit!"
-    }
-
-    if (operator === "Gridlock" && random(5) === 5|| operator === "Nomad" && random(5) === 5) {
-        taktik = "Oink Oink! Play the Gridlock Nomad Combi"
-    }
-
     writeById("OpName", operator)
     writeById("primary", primary)
     writeById("Grip", Grip)
@@ -44,10 +35,22 @@ function go(){
     writeById("SecondaryUnderBarrel", SecondaryUnderBarrel)
     writeById("gadget", gadget)
     writeById("TaktikH", taktik)
-
-
 }
 //-------------------------------------e-n-d---o-f---g-o---------------------------------//
+
+
+//-------------------------------------d-i-s-a-b-l-e-r---------------------------------------//
+// function getOps(operators){
+//     const ops = document.getElementsByClassName('filterImgDis')
+
+//     operators.forEach(element => {
+//         if (element === ops) {
+//             operators = operators.splice(ops)
+//         }
+//         return operators
+//     })
+// }
+//-------------------------------------e-n-d---o-f---d-i-s-a-b-l-e-r-------------------------//
 
 
 //-------------------------------------s-e-t-t-e-r---------------------------------------//
@@ -55,7 +58,7 @@ function writeById(id, message) {
     return document.getElementById(id).innerHTML = message;
 }
 
-//-------------------------------------e-n-d---o-f---w-r-i-t-e-r---------------------------//
+//-------------------------------------e-n-d---o-f---s-e-t-t-e-r---------------------------//
 
 
 //-------------------------------------g-e-t-e-r-------------------------------------------//
@@ -84,13 +87,18 @@ function random(max){
 //-------------------------------------s-h-u-f-f-l-e---------------------------------------//
 function shuffle() {
     // Operator
-    const AttackerArray = ["AtkRecruit", "Sledge", "Thatcher","Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze", "Blitz", "IQ",
+    let AttackerArray = ["AtkRecruit", "Sledge", "Thatcher","Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze", "Blitz", "IQ",
         "Buck","Blackbeard", "Capitão", "Hibana", "Jackal", "Ying", "Zofia", "Dokkaebi", "Lion", "Finka", "Maverick",
         "Nomad", "Gridlock", "Nøkk", "Amaru", "Kali", "Iana", "Ace", "Zero", "Flores", "Osa"]
 
-    const DefenderArray = ["DefRecruit", "Smoke", "Mute", "Castle", "Pulse", "Doc", "Rook", "Kapkan", "Tachanka", "Jäger", "Bandit",
+    // AttackerArray = getOps(AttackerArray)
+
+    let DefenderArray = ["DefRecruit", "Smoke", "Mute", "Castle", "Pulse", "Doc", "Rook", "Kapkan", "Tachanka", "Jäger", "Bandit",
         "Frost", "Valkyrie", "Caveira", "Echo", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Alibi", "Clash", "Kaid",
         "Mozzie", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird", "Thorn", "Azami"]
+
+    // DefenderArray = getOps(DefenderArray)
+
 
     //attachments
     let GripArray = ["no Grip", "vertical Grip", "angled Grip"]
@@ -2770,11 +2778,11 @@ function randomizeLoadout(...args){
 function taktik() {
     // atk
     if (getValue() === 1) {
-        return ["Rush"]
+        return ["Rush", "Slow Push"]
     }
     // def
     if (getValue() === 2) {
-        return ["Roam"]
+        return ["Roam", "Anchor"]
     }
     //both
     if (getValue() === 0) {
