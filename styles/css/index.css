@@ -275,4 +275,12 @@ tr {
   padding: 7px;
   margin: 0;
 }
+
+#Version {
+  position: absolute;
+  top: 97%;
+  left: 96%;
+  color: #b8b8b8;
+  font-size: x-small;
+}
 /*# sourceMappingURL=index.css.map */

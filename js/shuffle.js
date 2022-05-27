@@ -40,15 +40,19 @@ function go(){
 
 
 //-------------------------------------d-i-s-a-b-l-e-r---------------------------------------//
-// function getOps(operators){
-//     const ops = document.getElementsByClassName('filterImgDis')
+// function getOps(operators) {
+//     let ops = document.getElementsByClassName('filterImgDis')
 
-//     operators.forEach(element => {
-//         if (element === ops) {
-//             operators = operators.splice(ops)
+//     for (let i = 0; i < ops.length; i++) {
+//         // ops[i] = ops[i].id
+
+//         for (let j = 0; j < operators.length; j++) {
+//             if (ops[i].toString().includes(operators[j])){
+//                 operators[j] = ""
+//             }
 //         }
-//         return operators
-//     })
+//     }
+//     return operators
 // }
 //-------------------------------------e-n-d---o-f---d-i-s-a-b-l-e-r-------------------------//
 
@@ -91,13 +95,13 @@ function shuffle() {
         "Buck","Blackbeard", "Capitão", "Hibana", "Jackal", "Ying", "Zofia", "Dokkaebi", "Lion", "Finka", "Maverick",
         "Nomad", "Gridlock", "Nøkk", "Amaru", "Kali", "Iana", "Ace", "Zero", "Flores", "Osa"]
 
-    // AttackerArray = getOps(AttackerArray)
+    AttackerArray = getOps(AttackerArray)
 
     let DefenderArray = ["DefRecruit", "Smoke", "Mute", "Castle", "Pulse", "Doc", "Rook", "Kapkan", "Tachanka", "Jäger", "Bandit",
         "Frost", "Valkyrie", "Caveira", "Echo", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Alibi", "Clash", "Kaid",
         "Mozzie", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird", "Thorn", "Azami"]
 
-    // DefenderArray = getOps(DefenderArray)
+    DefenderArray = getOps(DefenderArray)
 
 
     //attachments
@@ -171,7 +175,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Frag Grenades", "Smoke Grenade", "Hard Breach Charge")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -209,7 +213,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Frag Grenades", "Stun Grenades")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -255,7 +259,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Claymore", "Breach Charges")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -299,7 +303,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Claymore", "Breach Charges")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -341,7 +345,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Stun Grenade", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -395,7 +399,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Claymore", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -429,7 +433,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Hard Breach Charge", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -464,7 +468,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Frag Grenade", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -516,7 +520,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Breach Charge", "Hard Breach Charge")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -543,7 +547,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Breach Charge", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -588,7 +592,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Breach Charge", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -626,7 +630,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Stun Grenade", "Hard Breach Charge")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -665,7 +669,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Stun Grenade", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -704,7 +708,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Hard Breach Charge", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -748,7 +752,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Hard Breach Charge", "Breach Charge")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -798,7 +802,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Claymore", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -833,7 +837,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Hard Breach Charge", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -870,7 +874,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Breach Charge", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -914,7 +918,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Smoke Grenade", "Stun Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -967,7 +971,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Stun Grenade", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1021,7 +1025,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Stun Grenade", "Frag Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1059,7 +1063,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Claymore", "Frag Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1102,7 +1106,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Breach Charge", "Stun Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1148,7 +1152,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Smoke Grenade", "Breach Charge")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1191,7 +1195,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Frag Grenades", "Hard Breach Charge")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1236,7 +1240,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Hard Breach Charge", "Stun Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1272,7 +1276,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Breach Charge", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1315,7 +1319,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Frag Grenade", "Smoke Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1350,7 +1354,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Breach Charge", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1394,7 +1398,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Hard Breach Charge", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1432,7 +1436,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Stun Grenade", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1468,7 +1472,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Smoke Grenade", "Claymore")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1507,7 +1511,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Nitro Cell", "Impact Grenade", "Proximity Alarm")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1551,7 +1555,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Deployable Shield", "Barbed Wire")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1594,7 +1598,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Nitro Cell", "Bulletproof Camera")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1637,7 +1641,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Proximity Alarm", "Bulletproof Camera")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1680,7 +1684,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1734,7 +1738,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Bulletproof Camera")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1788,7 +1792,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Proximity Alarm", "Impact Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1831,7 +1835,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Impact Grenade", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1873,7 +1877,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Deployable Shield", "Barbed Wire")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1909,7 +1913,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Bulletproof Camera", "Barbed Wire")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1943,7 +1947,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Nitro Cell", "Barbed Wire")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -1986,7 +1990,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Bulletproof Camera", "Deployable Shield")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2020,7 +2024,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Impact Grenade", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2055,7 +2059,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Impact Grenade", "Proximity Alarm")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2099,7 +2103,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Impact Grenade", "Deployable Shield")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2142,7 +2146,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Proximity Alarm", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2176,7 +2180,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Bulletproof Camera", "Impact Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2211,7 +2215,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Deployable Shield")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2254,7 +2258,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Bulletproof Camera", "Impact Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2297,7 +2301,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Impact Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2341,7 +2345,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Deployable Shield", "Impact Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2376,7 +2380,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Impact Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2420,7 +2424,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2456,7 +2460,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2498,7 +2502,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Deployable Shield", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2535,7 +2539,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Proximity Alarm", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2579,7 +2583,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Proximity Alarm", "Impact Grenade")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2621,7 +2625,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Proximity Alarm")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2657,7 +2661,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Impact Grenade", "Bulletproof Camera")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2694,7 +2698,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Bulletproof Camera")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2737,7 +2741,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Impact Grenade", "Nitro Cell")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2779,7 +2783,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Deployable Shield")
             Taktik = randomizeLoadout(taktik()[random(taktik().length)])
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2814,7 +2818,7 @@ function shuffle() {
             Gadget = randomizeLoadout("Barbed Wire", "Impact Grenade")
             Taktik = taktik()[random(taktik().length)]
 
-            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + UnderBarrel + "," + Barrel + "," +
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
                 Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
@@ -2845,7 +2849,7 @@ function taktik() {
     }
     //both
     if (getValue() === 0) {
-        return ["! ! DONT SHOOT ! !", "Knife Only", "Dont go into the Site", "Holo D","Secondary Only", "Only Run Out Kills", "Primary Only", "Controller Only",
+        return ["! ! DONT SHOOT ! !", "Knife Only", "Don't go into the Site", "Holo D","Secondary Only", "Only Run Out Kills", "Primary Only", "Controller Only",
                  "TeeBag all the time", "Full Time ADS", "Q and E spam all the time", "Hipfire Only", "OneTap Only", "Just play Normal", "Just play Normal", "Just play Normal","Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal", "Just play Normal",
                  "Just play Normal", ]
