@@ -1,5 +1,5 @@
 function toggle(el) {
-    if (el.className == "filterImg") {
+    if (el.className === "filterImg") {
         el.className = "filterImgDis"
     } 
     else {
