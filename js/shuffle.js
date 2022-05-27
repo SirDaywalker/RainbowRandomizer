@@ -40,20 +40,21 @@ function go(){
 
 
 //-------------------------------------d-i-s-a-b-l-e-r---------------------------------------//
-// function getOps(operators) {
-//     let ops = document.getElementsByClassName('filterImgDis')
+function getOps(operators) {
+    let ops = document.getElementsByClassName('filterImgDis')
 
-//     for (let i = 0; i < ops.length; i++) {
-//         // ops[i] = ops[i].id
-
-//         for (let j = 0; j < operators.length; j++) {
-//             if (ops[i].toString().includes(operators[j])){
-//                 operators[j] = ""
-//             }
-//         }
-//     }
-//     return operators
-// }
+    for (let i = 0; i < ops.length; i++) {
+        for (let j = 0; j < operators.length; j++) {
+            if (ops[i].id === operators[j]){
+                x = j
+                if(j === 0){x = 1}
+                operators.splice(j, x)
+                break
+            }
+        }
+    }
+    return operators
+}
 //-------------------------------------e-n-d---o-f---d-i-s-a-b-l-e-r-------------------------//
 
 
