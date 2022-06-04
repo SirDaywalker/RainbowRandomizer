@@ -1,13 +1,12 @@
-<html>
+<html lang="en">
     <!DOCTYPE html>
-    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="./styles/css/index.css">
-        <link rel="shortcut icon" href="./images/RainbowSixSymbol.png" />
+        <link rel="shortcut icon" href="./images/RainbowSixSymbol.png"/>
 
         <script src="./js/shuffle.js"></script>
         <script src="./js/toggle.js"></script>
@@ -28,12 +27,17 @@
                 <input id="def" name="state-d" type="radio" />
                 <label for="def" onclick="">Defense</label>
             
-            </div>
+            </div>            
             <div class="dropdown" data-dropdown>
             <button class="show" data-dropdown-button>Filter</button>
                 <div class="dropdown-menu filterContent">
                     <table>
                         <tbody>
+                            <tr>
+                                <td>
+                                    <a id="changeAll" class="disable" onclick="changeState(this)" data-en="Enable?" data-dis="Disable?" data-ened="Enabled" data-dised="Disabled"></a>
+                                </td>
+                            </tr>
                             <tr>
                                 <td class="filterName">Attack Recruit</td>
                                 <td class="imgBox">
@@ -467,7 +471,7 @@
         </section>
 
         <p id="Version">
-            Version 1.1.0
+            Version 1.1.1
         </p>
 
     </body>

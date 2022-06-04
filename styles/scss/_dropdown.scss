@@ -36,6 +36,108 @@
 }
 
 
+//-------------------------------------button-----------------------------------------//
+$speed: 0.9s;
+
+#changeAll{
+    height: 40px;
+    width: 108px;
+    
+    opacity: 1;
+    outline: 0;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.disable{
+    &:hover{
+        &:after{
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+        }
+        &:before{
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+        }
+    }    
+
+    &:after{
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        color: #242729;
+        display: block;
+        transition: $speed;
+        position: absolute;
+        background: #adadaf;
+        content: attr(data-dis);
+        transform: translateY(-50%) rotateX(90deg);
+    }
+    
+    &:before{
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color: #adadaf;
+        display: block;
+        line-height: 40px;
+        transition: $speed;
+        position: relative;
+        background: #242729;
+        content: attr(data-ened);
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+.enable{
+    &:hover{
+        &:after{
+            opacity: 0;
+            transform: translateY(50%) rotateX(90deg);
+        }
+        &:before{
+            opacity: 1;
+            transform: translateY(0) rotateX(0);
+        }
+    }    
+
+    &:after{
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color: #242729;
+        display: block;
+        line-height: 40px;
+        transition: $speed;
+        position: relative;
+        background: #adadaf;
+        content: attr(data-dised);
+        transform: translateY(0) rotateX(0);
+    }
+    
+    &:before{
+       top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        color: #adadaf;
+        display: block;
+        transition: $speed;
+        position: absolute;
+        background: #242729;
+        content: attr(data-en);
+        transform: translateY(-50%) rotateX(90deg); 
+    }
+}
+//-------------------------------------button-----------------------------------------//
+
+
 //-------------------------------------content-----------------------------------------//
 .filterContent {
     display: grid;

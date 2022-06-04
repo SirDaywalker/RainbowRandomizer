@@ -46,7 +46,7 @@ function getOps(operators) {
     for (let i = 0; i < ops.length; i++) {
         for (let j = 0; j < operators.length; j++) {
             if (ops[i].id === operators[j]){
-                x = j
+                let x = j
                 if(j === 0){x = 1}
                 operators.splice(j, x)
                 break
