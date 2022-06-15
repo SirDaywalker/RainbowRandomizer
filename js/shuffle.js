@@ -59,10 +59,7 @@ function getOps(operators) {
 
 
 //-------------------------------------s-e-t-t-e-r---------------------------------------//
-function writeById(id, message) {
-    return document.getElementById(id).innerHTML = message;
-}
-
+function writeById(id, message) {return document.getElementById(id).innerHTML = message;}
 //-------------------------------------e-n-d---o-f---s-e-t-t-e-r---------------------------//
 
 
@@ -82,10 +79,7 @@ function getValue(){
 
 
 //-------------------------------------r-a-n-d-o-m-----------------------------------------//
-function random(max){
-    const min = 0;
-    return Math.floor(Math.random() * (max - min)) + min
-}
+function random(max){return Math.floor(Math.random() * max)}
 //-------------------------------------e-n-d---o-f---r-a-n-d-o-m---------------------------//
 
 
@@ -94,7 +88,7 @@ function shuffle() {
     // Operator
     let AttackerArray = ["AtkRecruit", "Sledge", "Thatcher","Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze", "Blitz", "IQ",
         "Buck","Blackbeard", "Capitão", "Hibana", "Jackal", "Ying", "Zofia", "Dokkaebi", "Lion", "Finka", "Maverick",
-        "Nomad", "Gridlock", "Nøkk", "Amaru", "Kali", "Iana", "Ace", "Zero", "Flores", "Osa"]
+        "Nomad", "Gridlock", "Nøkk", "Amaru", "Kali", "Iana", "Ace", "Zero", "Flores", "Osa", "Sens"]
 
     AttackerArray = getOps(AttackerArray)
 
@@ -1478,6 +1472,52 @@ function shuffle() {
                 SecondaryBarrel + "," + Gadget + "," + Taktik
             break
         //-----------------------------------------------------------------------------------------------------------------------------------------------//
+            case "Sens":
+            Primary = randomizeLoadout("POF9", "417")
+            switch (Primary){
+                case "POF9":
+                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5, Scopes2, Scopes2_5)
+                    Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
+                    UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = BarrelArray.concat(extendedBarrel)
+                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    break
+
+                case "417":
+                    GripArray = GripArray.slice(0, 2)
+                    Grip = randomizeLoadout(GripArray[random(GripArray.length)])
+                    ScopeArray = ScopeArray.concat(Scopes1_5, Scopes2, Scopes2_5, Scopes3)
+                    Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
+                    UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    BarrelArray = SniperBarrelArray
+                    Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
+                    break
+            }
+            Secondary = randomizeLoadout("SDP 9mm", "GONNE-6")
+            switch (Secondary){
+                case "SDP 9mm":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
+                    break
+
+                case "GONNE-6":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = ""
+                    SecondaryBarrel = ""
+                    break
+            }
+            Gadget = randomizeLoadout("Hard Breach Charge", "Claymore")
+            Taktik = randomizeLoadout(taktik()[random(taktik().length)])
+
+            rtrn = operator + "," + Primary + "," + Grip + "," + Scope + "," + Barrel + "," + UnderBarrel + "," +
+                Secondary + "," + SecondaryGrip + "," +  SecondaryScope + "," +SecondaryUnderBarrel + "," +
+                SecondaryBarrel + "," + Gadget + "," + Taktik
+            break
+        //-----------------------------------------------------------------------------------------------------------------------------------------------//
         //-------------------------------------e-n-d---o-f---a-t-k----------------------------//
         //----------------------------------------d-e-f---------------------------------------//
         case "DefRecruit":
@@ -2832,9 +2872,7 @@ function shuffle() {
 
 
 //------------------------------------r-a-n-d-o-m-i-z-e---L-o-a-d-o-u-t-------------------//
-function randomizeLoadout(...args){
-    return args[random(args.length)]
-}
+function randomizeLoadout(...args){return args[random(args.length)]}
 //-------------------------------------e-n-d---o-f---L-o-a-d-o-u-t-----------------------//
 
 
