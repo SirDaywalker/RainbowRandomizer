@@ -444,7 +444,7 @@ function shuffle() {
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
-            Secondary = randomizeLoadout("PMM", "GONNE-6")
+            Secondary = randomizeLoadout("PMM", "GONNE-6", "Bearing 9")
             switch (Secondary){
                 case "PMM":
                     SecondaryGrip = ""
@@ -458,6 +458,14 @@ function shuffle() {
                     SecondaryScope = ""
                     SecondaryUnderBarrel =""
                     SecondaryBarrel = ""
+                    break
+
+                case "Bearing 9":
+                    SecondaryGrip = ""
+                    SecondaryScope = randomizeLoadout(SecondaryScopeArray[random(SecondaryScopeArray.length)])
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrelArray = SecondaryBarrelArray.concat("Compensator")
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
             Gadget = randomizeLoadout("Frag Grenade", "Smoke Grenade")
@@ -894,7 +902,7 @@ function shuffle() {
                     Barrel = ""
                     break
             }
-            Secondary = randomizeLoadout("GONNE-6", "SMG-12")
+            Secondary = randomizeLoadout("GONNE-6", "SMG-12", "C75-Auto")
             switch (Secondary){
                 case "GONNE-6":
                     SecondaryGrip = ""
@@ -908,6 +916,14 @@ function shuffle() {
                     SecondaryScope = randomizeLoadout(SecondaryScopeArray[random(SecondaryScopeArray.length)])
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     SecondaryBarrel = ""
+                    break
+
+                case "C75-Auto":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = ""
+                    SecondaryBarrelArray = ["no Barrel", "Suppressor"]
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
             Gadget = randomizeLoadout("Smoke Grenade", "Stun Grenade")
@@ -947,7 +963,7 @@ function shuffle() {
                     Barrel = ""
                     break
             }
-            Secondary = randomizeLoadout("GONNE-6", "LFP586")
+            Secondary = randomizeLoadout("GONNE-6", "LFP586", "P9")
             switch (Secondary){
                 case "GONNE-6":
                     SecondaryGrip = ""
@@ -961,6 +977,13 @@ function shuffle() {
                     SecondaryScope = ""
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     SecondaryBarrel = ""
+                    break
+
+                case "P9":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
             Gadget = randomizeLoadout("Stun Grenade", "Claymore")
@@ -986,7 +1009,7 @@ function shuffle() {
                 case "6P41":
                     GripArray = GripArray.slice(0, 2)
                     Grip = randomizeLoadout(GripArray[random(GripArray.length)])
-                    ScopeArray = ScopeArray.concat(Scopes1_5, Scopes2_5)
+                    FinkaScopeArray = ScopeArray.concat(Scopes1_5, Scopes2_5)
                     Scope = randomizeLoadout(ScopeArray[random(ScopeArray.length)])
                     UnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     BarrelArray = ["no Barrel", "Suppressor", "Flash Hider"]
@@ -1001,7 +1024,7 @@ function shuffle() {
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
-            Secondary = randomizeLoadout("GONNE-6", "PMM")
+            Secondary = randomizeLoadout("GONNE-6", "PMM", "GSh-18")
             switch (Secondary){
                 case "GONNE-6":
                     SecondaryGrip = ""
@@ -1014,6 +1037,13 @@ function shuffle() {
                     SecondaryGrip = ""
                     SecondaryScope = ""
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
+                    break
+
+                case "GSh-18":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = ""
                     SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
@@ -1128,7 +1158,7 @@ function shuffle() {
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
-            Secondary = randomizeLoadout("Super Shorty","GONNE-6")
+            Secondary = randomizeLoadout("Super Shorty","GONNE-6", "SDP 9mm")
             switch (Secondary){
                 case "GONNE-6":
                     SecondaryGrip = ""
@@ -1142,6 +1172,13 @@ function shuffle() {
                     SecondaryScope = randomizeLoadout(SecondaryScopeArray[random(SecondaryScopeArray.length)])
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     SecondaryBarrel = ""
+                    break
+
+                case "SDP 9mm":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
             Gadget = randomizeLoadout("Smoke Grenade", "Breach Charge")
@@ -1215,7 +1252,7 @@ function shuffle() {
                     Barrel = randomizeLoadout(BarrelArray[random(BarrelArray.length)])
                     break
             }
-            Secondary = randomizeLoadout("GONNE-6","SMG11")
+            Secondary = randomizeLoadout("GONNE-6","SMG11", "ITA12S")
             switch (Secondary){
                 case "GONNE-6":
                     SecondaryGrip = ""
@@ -1230,6 +1267,13 @@ function shuffle() {
                     SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     SecondaryBarrelArray = ["no Barrel", "Suppressor", "Compensator", "Flash Hider", "extended Barrel"]
                     SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(SecondaryBarrelArray.length)])
+                    break
+
+                case "ITA12S":
+                    SecondaryGrip = ""
+                    SecondaryScope = randomizeLoadout(SecondaryScopeArray[random(SecondaryScopeArray.length)])
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = ""
                     break
             }
             Gadget = randomizeLoadout("Hard Breach Charge", "Stun Grenade")
@@ -1250,7 +1294,7 @@ function shuffle() {
                     Barrel = ""
                     break
             }
-            Secondary = randomizeLoadout("C75 Auto","SPSMG9")
+            Secondary = randomizeLoadout("C75 Auto", "SPSMG9" ,"P226 Mk 25")
             switch (Secondary){
                 case "SPSMG9":
                     SecondaryGrip = ""
@@ -1266,6 +1310,13 @@ function shuffle() {
                     SecondaryUnderBarrel = ""
                     SecondaryBarrelArray = ["no Barrel", "Suppressor"]
                     SecondaryBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    break
+                
+                case "P226 Mk 25":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
             Gadget = randomizeLoadout("Breach Charge", "Claymore")
@@ -1899,7 +1950,7 @@ function shuffle() {
                     Barrel = ""
                     break
             }
-            Secondary = randomizeLoadout("PMM", "GSh-18")
+            Secondary = randomizeLoadout("PMM", "GSh-18", "Bearing 9")
             switch (Secondary){
                 case "PMM":
                     SecondaryGrip = ""
@@ -1912,6 +1963,14 @@ function shuffle() {
                     SecondaryGrip = ""
                     SecondaryScope = ""
                     SecondaryUnderBarrel = ""
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
+                    break
+
+                case "Bearing 9":
+                    SecondaryGrip = ""
+                    SecondaryScope = randomizeLoadout(SecondaryScopeArray[random(SecondaryScopeArray.length)])
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrelArray = SecondaryBarrelArray.concat("Compensator")
                     SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
             }
@@ -2279,9 +2338,9 @@ function shuffle() {
                     Barrel = ""
                     break
             }
-            Secondary = randomizeLoadout("C75 Auto", "SMG-12")
+            Secondary = randomizeLoadout("C75-Auto", "SMG-12")
             switch (Secondary){
-                case "C75 Auto":
+                case "C75-Auto":
                     SecondaryGrip = ""
                     SecondaryScope = ""
                     SecondaryUnderBarrel = ""
@@ -2401,7 +2460,7 @@ function shuffle() {
                     Barrel = ""
                     break
             }
-            Secondary = randomizeLoadout("Super Shorty", "SPSMG9")
+            Secondary = randomizeLoadout("Super Shorty", "SPSMG9", "P-10C")
             switch (Secondary){
                 case "SPSMG9":
                     SecondaryGrip = ""
@@ -2409,6 +2468,13 @@ function shuffle() {
                     SecondaryUnderBarrel = ""
                     SecondaryBarrelArray = ["no Barrel", "Suppressor","Flash Hider"]
                     SecondaryBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    break
+
+                case "P-10C":
+                    SecondaryGrip = ""
+                    SecondaryScope = ""
+                    SecondaryUnderBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
+                    SecondaryBarrel = randomizeLoadout(SecondaryBarrelArray[random(UnderBarrelArray.length)])
                     break
 
                 case "Super Shorty":
