@@ -1,3 +1,14 @@
+function f(a) {
+    if (a !== undefined) {
+        return JSON.parse(a)
+    }
+
+    fetch('https://api.github.com/repos/SirDaywalker/RainbowRandomizer/contents/js/operators.json')
+        .then(resp => resp.json())
+        .then(json => f(atob(json["content"])))
+}
+
+
 function go(){
     //splitting nach ","
     const shuffleArray = shuffle().split(",")
@@ -1311,7 +1322,7 @@ function shuffle() {
                     SecondaryBarrelArray = ["no Barrel", "Suppressor"]
                     SecondaryBarrel = randomizeLoadout(UnderBarrelArray[random(UnderBarrelArray.length)])
                     break
-                
+
                 case "P226 Mk 25":
                     SecondaryGrip = ""
                     SecondaryScope = ""
