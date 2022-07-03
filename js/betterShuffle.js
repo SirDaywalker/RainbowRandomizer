@@ -1,11 +1,41 @@
+//-------------------------------------s-h-u-f-f-l-e---------------------------------------//
+let counter = 0;
+function shuffle() {
+    if (counter < 1){
+        f();
+        counter++;
+        return;
+    }
+
+    let op = operators;
+
+    if (getValue() != null) {op = op[getValue()];}
+    else {op = op[0].concat(op[1]);}
+
+    // op = readoutFilter(op);
+
+    op = op[random(op.length)]
+
+    //images
+    document.getElementById("opPic").src="./images/Ops/" + op.name.toLowerCase() + ".png";
+    document.getElementById("icon").src="./images/icons/" + op.name.toLowerCase() + ".png";
+
+    //text
+    writeById("opName", op.name);
+    writeById("primary", op.primary[random(op.primary.length)]);
+    writeById("secondary", op.secondary[random(op.secondary.length)]);
+    writeById("gadget", op.gadget[random(op.gadget.length)]);
+}
+//-------------------------------------e-n-d---o-f---s-h-u-f-f-l-e--------------------------------------//
+
+
 //-------------------------------------F-e-t-c-h---------------------------------------//
 let operators;
-let a;
 
-document.addEventListener("load", fetchOps(a));
-
-function fetchOps(a) {
-    if (operators !== undefined) return;
+function f(a) {
+    if (operators !== undefined) {
+        return;
+    }
 
     if (a !== undefined) {
         operators = JSON.parse(a);
@@ -13,43 +43,26 @@ function fetchOps(a) {
     }
 
     fetch('https://api.github.com/repos/SirDaywalker/RainbowRandomizer/contents/js/operators.json',
-        {mode: 'cors'}).then(resp => resp.json()).then(json => fetchOps(atob(json["content"])));
+        {mode: 'cors'}).then(resp => resp.json()).then(json => f(atob(json["content"])));
 }
 //-----------------------------------e-n-d---o-f--F-e-t-c-h------------------------------//
 
-function shuffle() {
-    if (getValue() != null) {operators = readoutFilter(operators[getValue()]);}
-    else {operators = readoutFilter(operators);}
-
-    let rolledOp = randomizeLoadout(operators[0]);
-
-    //images
-    document.getElementById("opPic").src="./images/Ops/" + rolledOp.name.toLowerCase() + ".png";
-    document.getElementById("icon").src="./images/icons/" + rolledOp.name.toLowerCase() + ".png";
-
-    //text
-    writeById("opName", rolledOp.name);
-    writeById("primary", rolledOp.primary);
-    writeById("secondary", rolledOp.secondary);
-    writeById("gadget", rolledOp.gadget);
-}
-
 
 //-------------------------------------F-i-l-t-e-r---------------------------------------//
-function readoutFilter(operators) {
+function readoutFilter(obj) {
     let ops = document.getElementsByClassName('filterImgDis');
 
     for (let i = 0; i < ops.length; i++) {
-        for (let j = 0; j < operators.length; j++) {
-            if (ops[i].id === operators[j]){
+        for (let j = 0; j < obj.length; j++) {
+            if (ops[i].id === obj[j]){
                 let x = j;
                 if(j === 0) {x = 1;}
-                operators.splice(j, x);
+                obj.splice(j, x);
                 break;
             }
         }
     }
-    return operators;
+    return obj;
 }
 //-------------------------------------e-n-d---o-f---F-i-l-t-e-r-------------------------//
 
@@ -68,7 +81,7 @@ function getValue(){
 
 
 //------------------------------------r-a-n-d-o-m-i-z-e---L-o-a-d-o-u-t-------------------//
-function randomizeLoadout(...args){
-    return () => args[Math.floor(Math.random() * args.length)];
+function random(max){
+    return Math.floor(Math.random() * max);
 }
 //-------------------------------------e-n-d---o-f---L-o-a-d-o-u-t-----------------------//
