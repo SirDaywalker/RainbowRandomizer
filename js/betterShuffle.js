@@ -2,7 +2,7 @@
 let counter = 0;
 function shuffle() {
     if (counter < 1){
-        f();
+        fetchOps();
         counter++;
         return;
     }
@@ -32,44 +32,36 @@ function shuffle() {
 //-------------------------------------F-e-t-c-h---------------------------------------//
 let operators;
 
-function f(a) {
-    if (operators !== undefined) {
-        return;
-    }
-
+function fetchOps(a) {
+    if (operators !== undefined) return;
     if (a !== undefined) {
         operators = JSON.parse(a);
         return;
     }
 
     fetch('https://api.github.com/repos/SirDaywalker/RainbowRandomizer/contents/js/operators.json',
-        {mode: 'cors'}).then(resp => resp.json()).then(json => f(atob(json["content"])));
+        {mode: 'cors'}).then(resp => resp.json()).then(json => fetchOps(atob(json["content"])));
 }
 //-----------------------------------e-n-d---o-f--F-e-t-c-h------------------------------//
 
 
 //-------------------------------------F-i-l-t-e-r---------------------------------------//
-function readoutFilter(obj) {
+function readoutFilter(opAry) {
     let ops = document.getElementsByClassName('filterImgDis');
 
     for (let i = 0; i < ops.length; i++) {
-        for (let j = 0; j < obj.length; j++) {
-            if (ops[i].id === obj[j]){
+        for (let j = 0; j < opAry.length; j++) {
+            if (ops[i].id === opAry[j]){
                 let x = j;
                 if(j === 0) {x = 1;}
-                obj.splice(j, x);
+                opAry.splice(j, x);
                 break;
             }
         }
     }
-    return obj;
+    return opAry;
 }
 //-------------------------------------e-n-d---o-f---F-i-l-t-e-r-------------------------//
-
-
-//-------------------------------------w-r-i-t-e--b-y--I-d------------------------------------------//
-function writeById(id, message) {return document.getElementById(id).innerHTML = message;}
-//-------------------------------------e-n-d---o-f---w-r-i-t-e--b-y--I-d----------------------------//
 
 
 //-------------------------------------G-e-t-e-r-------------------------------------------//
@@ -80,8 +72,11 @@ function getValue(){
 //-------------------------------------e-n-d---o-f---G-e-t-e-r-----------------------------//
 
 
+//-------------------------------------w-r-i-t-e--b-y--I-d------------------------------------------//
+function writeById(id, message) {return document.getElementById(id).innerHTML = message;}
+//-------------------------------------e-n-d---o-f---w-r-i-t-e--b-y--I-d----------------------------//
+
+
 //------------------------------------r-a-n-d-o-m-i-z-e---L-o-a-d-o-u-t-------------------//
-function random(max){
-    return Math.floor(Math.random() * max);
-}
+function random(max) {return Math.floor(Math.random() * max);}
 //-------------------------------------e-n-d---o-f---L-o-a-d-o-u-t-----------------------//
