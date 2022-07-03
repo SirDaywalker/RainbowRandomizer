@@ -8,12 +8,11 @@
         <link rel="stylesheet" href="./styles/css/index.css">
         <link rel="shortcut icon" href="./images/RainbowSixSymbol.png"/>
 
-        <script src="./js/shuffle.js"></script>
-        <script src="./js/toggle.js"></script>
-        <script src="./js/dropdown.js" defer></script>
+        <script src="./js/betterShuffle.js"></script>
+        <script src="js/optical.js"></script>
         <title>Rainbow Six Siege Randomizer</title>
     </head>
-    
+
     <body>
         <div class="switch">
             <div class="switch-toggle switch-3 switch-candy">
@@ -35,403 +34,403 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a id="changeAll" class="disable" onclick="changeState(this)" data-en="Enable?" data-dis="Disable?" data-ened="Enabled" data-dised="Disabled"></a>
+                                    <a id="changeAll" class="disable" onclick="disableAllFilterImages(this)" data-en="Enable?" data-dis="Disable?" data-ened="Enabled" data-dised="Disabled"></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Attack Recruit</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/atkrecruit.png" id="AtkRecruit" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/atkrecruit.png" id="AtkRecruit" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Sledge</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/sledge.png" id="Sledge" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/sledge.png" id="Sledge" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Thatcher</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/thatcher.png" id="Thatcher" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/thatcher.png" id="Thatcher" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Ash</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/ash.png" id="Ash" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/ash.png" id="Ash" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Thermite</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/thermite.png" id="Thermite" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/thermite.png" id="Thermite" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Twitch</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/twitch.png" id="Twitch" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/twitch.png" id="Twitch" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Montagne</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/montagne.png" id="Montagne" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/montagne.png" id="Montagne" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Glaz</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/glaz.png" id="Glaz" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/glaz.png" id="Glaz" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Fuze</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/fuze.png" id="Fuze" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/fuze.png" id="Fuze" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Blitz</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/blitz.png" id="Blitz" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/blitz.png" id="Blitz" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">IQ</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/iq.png" id="IQ" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/iq.png" id="IQ" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Buck</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/buck.png" id="Buck" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/buck.png" id="Buck" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Blackbeard</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/blackbeard.png" id="Blackbeard" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/blackbeard.png" id="Blackbeard" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Capitão</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/capitão.png" id="Capitão" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/capitão.png" id="Capitão" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Hibana</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/hibana.png" id="Hibana" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/hibana.png" id="Hibana" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Jackal</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/jackal.png" id="Jackal" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/jackal.png" id="Jackal" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Ying</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/ying.png" id="Ying" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/ying.png" id="Ying" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Zofia</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/zofia.png" id="Zofia" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/zofia.png" id="Zofia" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Dokkaebi</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/dokkaebi.png" id="Dokkaebi" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/dokkaebi.png" id="Dokkaebi" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Lion</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/lion.png" id="Lion" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/lion.png" id="Lion" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Finka</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/finka.png" id="Finka" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/finka.png" id="Finka" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Maverick</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/maverick.png" id="Maverick" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/maverick.png" id="Maverick" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Nomad</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/nomad.png" id="Nomad" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/nomad.png" id="Nomad" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Gridlock</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/gridlock.png" id="Gridlock" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/gridlock.png" id="Gridlock" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Nøkk</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/nøkk.png" id="Nøkk" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/nøkk.png" id="Nøkk" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Amaru</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/amaru.png" id="Amaru" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/amaru.png" id="Amaru" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Kali</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/kali.png" id="Kali" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/kali.png" id="Kali" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Iana</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/iana.png" id="Iana" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/iana.png" id="Iana" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Ace</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/ace.png" id="Ace" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/ace.png" id="Ace" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Zero</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/zero.png" id="Zero" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/zero.png" id="Zero" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Flores</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/flores.png" id="Flores" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/flores.png" id="Flores" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Osa</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/osa.png" id="Osa" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/osa.png" id="Osa" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Sens</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/sens.png" id="Sens" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/sens.png" id="Sens" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Defend Recruit</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/defrecruit.png" id="DefRecruit" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/defrecruit.png" id="DefRecruit" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Smoke</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/smoke.png" id="Smoke" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/smoke.png" id="Smoke" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Mute</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/mute.png" id="Mute" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/mute.png" id="Mute" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Castle</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/castle.png" id="Castle" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/castle.png" id="Castle" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Pulse</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/pulse.png" id="Pulse" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/pulse.png" id="Pulse" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Doc</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/doc.png" id="Doc" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/doc.png" id="Doc" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Rook</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/rook.png" id="Rook" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/rook.png" id="Rook" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Kapkan</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/kapkan.png" id="Kapkan" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/kapkan.png" id="Kapkan" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Tachanka</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/tachanka.png" id="Tachanka" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/tachanka.png" id="Tachanka" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Jäger</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/jäger.png" id="Jäger" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/jäger.png" id="Jäger" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Bandit</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/bandit.png" id="Bandit" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/bandit.png" id="Bandit" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Frost</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/frost.png" id="Frost" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/frost.png" id="Frost" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Valkyrie</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/valkyrie.png" id="Valkyrie" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/valkyrie.png" id="Valkyrie" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Caveira</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/caveira.png" id="Caveira" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/caveira.png" id="Caveira" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Echo</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/echo.png" id="Echo" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/echo.png" id="Echo" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Mira</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/mira.png" id="Mira" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/mira.png" id="Mira" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Lesion</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/lesion.png" id="Lesion" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/lesion.png" id="Lesion" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Ela</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/ela.png" id="Ela" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/ela.png" id="Ela" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Vigil</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/vigil.png" id="Vigil" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/vigil.png" id="Vigil" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Maestro</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/maestro.png" id="Maestro" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/maestro.png" id="Maestro" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Alibi</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/alibi.png" id="Alibi" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/alibi.png" id="Alibi" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Clash</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/clash.png" id="Clash" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/clash.png" id="Clash" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Kaid</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/kaid.png" id="Kaid" onclick="toggle(this)"> 
+                                    <img class="filterImg" src="./images/icons/kaid.png" id="Kaid" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Mozzie</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/mozzie.png" id="Mozzie" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/mozzie.png" id="Mozzie" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Warden</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/warden.png" id="Warden" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/warden.png" id="Warden" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Goyo</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/goyo.png" id="Goyo" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/goyo.png" id="Goyo" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Wamai</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/wamai.png" id="Wamai" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/wamai.png" id="Wamai" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Oryx</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/oryx.png" id="Oryx" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/oryx.png" id="Oryx" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Melusi</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/melusi.png" id="Melusi" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/melusi.png" id="Melusi" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Aruni</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/aruni.png" id="Aruni" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/aruni.png" id="Aruni" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Thunderbird</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/thunderbird.png" id="Thunderbird" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/thunderbird.png" id="Thunderbird" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Thorn</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/thorn.png" id="Thorn" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/thorn.png" id="Thorn" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="filterName">Azami</td>
                                 <td class="imgBox">
-                                    <img class="filterImg" src="./images/icons/azami.png" id="Azami" onclick="toggle(this)">
+                                    <img class="filterImg" src="./images/icons/azami.png" id="Azami" onclick="disableFilterImage(this)">
                                 </td>
                             </tr>
                         </tbody>
@@ -441,7 +440,7 @@
         </div>
 
         <div class="ButtonContainer">
-            <button class="Shuffle" onclick="go()">
+            <button class="Shuffle" onclick="shuffle()">
                 Shuffle
             </button>
         </div>
@@ -450,7 +449,7 @@
         <img class="Pics" id="icon" src="" id="">
 
         <div class="OpNameBox">
-            <h1 class="OpName" id="OpName"></h1>
+            <h1 class="OpName" id="opName"></h1>
         </div>  
 
         <section class="lineUp">
