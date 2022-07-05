@@ -33,7 +33,9 @@ async function fetchOps(a) {
         return;
     }
 
-    await fetch('https://api.github.com/repos/SirDaywalker/RainbowRandomizer/contents/js/operators.json', { mode: 'cors' }).then(resp => resp.json()).then(json => fetchOps(atob(json["content"])));
+    await fetch('https://api.github.com/repos/SirDaywalker/RainbowRandomizer/contents/js/operators.json', { mode: 'cors' })
+        .then(resp => resp.json())
+        .then(json => fetchOps(decodeURIComponent(atob(json["content"]).split('').map(function(c) { return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2); }).join(''))));
 }
 //-----------------------------------e-n-d---o-f--F-e-t-c-h------------------------------//
 
