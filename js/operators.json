@@ -1,7 +1,7 @@
 [
     [
         {
-            "name": "Recruit",
+            "name": "AtkRecruit",
             "primary": ["M249", "Mk 14 EBR", "L85A2"],
             "secondary": ["P12", "Super Shorty", "C75 Auto"],
             "gadget": ["Frag Grenades", "Smoke Grenade", "Hard Breach Charge"]
@@ -202,7 +202,7 @@
     
     [
         {
-            "name": "Recruit",
+            "name": "DefRecruit",
             "primary": ["MP5K", "M870"],
             "secondary": ["P9", "SMG-11"],
             "gadget": ["Nitro Cell", "Impact Grenade", "Proximity Alarm"]
