@@ -2,15 +2,16 @@
 function shuffle() {
     let op = operators;
 
-    if (getValue() != null) { op = op[getValue()]; } else { op = op[0].concat(op[1]); }
+    if (getValue() != null) {op = op[getValue()];}
+    else {op = op[0].concat(op[1]);}
 
-    // op = readoutFilter(op);
+    op = readoutFilter(op);
 
-    op = op[random(op.length)]
+    op = op[random(op.length)];
 
     //images
-    document.getElementById("opPic").src = "./images/Ops/" + op.name.toLowerCase() + ".png";
-    document.getElementById("icon").src = "./images/icons/" + op.name.toLowerCase() + ".png";
+    document.getElementById("opPic").src="./images/Ops/" + op.name.toLowerCase() + ".png";
+    document.getElementById("icon").src="./images/icons/" + op.name.toLowerCase() + ".png";
 
     //text
     writeById("opName", op.name);
@@ -43,9 +44,9 @@ function readoutFilter(opAry) {
 
     for (let i = 0; i < ops.length; i++) {
         for (let j = 0; j < opAry.length; j++) {
-            if (ops[i].id === opAry[j]) {
+            if (ops[i].id === opAry[j].name){
                 let x = j;
-                if (j === 0) { x = 1; }
+                if(j === 0) {x = 1;}
                 opAry.splice(j, x);
                 break;
             }
