@@ -1,3 +1,5 @@
+let history = [];
+
 //-------------------------------------s-h-u-f-f-l-e---------------------------------------//
 function shuffle() {
     let op = operators;
@@ -18,6 +20,8 @@ function shuffle() {
     writeById("primary", op.primary[random(op.primary.length)]);
     writeById("secondary", op.secondary[random(op.secondary.length)]);
     writeById("gadget", op.gadget[random(op.gadget.length)]);
+
+    queueIt(op, history);
 }
 //-------------------------------------e-n-d---o-f---s-h-u-f-f-l-e--------------------------------------//
 
@@ -38,6 +42,20 @@ async function fetchOps(a) {
         .then(json => fetchOps(decodeURIComponent(atob(json["content"]).split('').map(function(c) { return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2); }).join(''))));
 }
 //-----------------------------------e-n-d---o-f--F-e-t-c-h------------------------------//
+
+
+
+//-------------------------------------H-i-s-t-o-r-y---------------------------------------//
+function queueIt(value, queue){
+    if(queue.length < 5){
+        queue.push(value);
+    }
+    else{
+        queue.push(value);
+        queue.shift();
+    }
+}
+//-------------------------------------e-n-d---o-f---H-i-s-t-o-r-y-------------------------//
 
 
 //-------------------------------------F-i-l-t-e-r---------------------------------------//
