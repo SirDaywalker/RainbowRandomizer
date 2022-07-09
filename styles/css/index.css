@@ -311,13 +311,21 @@ tr {
   width: auto;
 }
 
-.history {
+#historyDisabled {
+  display: none;
+}
+
+#history {
   position: absolute;
   top: 17%;
   left: 87%;
   font-size: 12px;
   width: 222px;
   height: 404px;
+}
+
+.historyWrapDis {
+  display: none;
 }
 
 .historyWrap {

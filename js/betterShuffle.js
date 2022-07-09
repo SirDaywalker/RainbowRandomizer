@@ -60,6 +60,19 @@ function queueIt(value, queue){
 
 //------------------------------------S-h-o-w---H-i-s-t-o-r-y---------------------------------------//
 function showHistory(){
+    if (history.length === 1){
+        let e = document.getElementById("historyDisabled");
+        e.id = "history";
+    }
+
+    if (history.length <= 5){
+        try {
+            let e = document.getElementsByClassName("historyWrapDis");
+            e[e.length - 1].className = "historyWrap"; 
+        } 
+        catch (error) {}
+    }
+        
     for (let i = 1; i <= history.length; i++) {
         document.getElementById("historyImg" + i).src="./images/icons/" + history[i - 1].name.toLowerCase() + ".png";
         writeById("historyName" + i, history[i - 1].name);
