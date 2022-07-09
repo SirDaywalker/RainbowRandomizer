@@ -1,3 +1,5 @@
+let operators;
+fetchOps();
 let history = [];
 
 //-------------------------------------s-h-u-f-f-l-e---------------------------------------//
@@ -27,9 +29,6 @@ function shuffle() {
 
 
 //-------------------------------------F-e-t-c-h---------------------------------------//
-let operators;
-fetchOps();
-
 async function fetchOps(a) {
     if (operators !== undefined) return;
     if (a !== undefined) {
@@ -54,8 +53,30 @@ function queueIt(value, queue){
         queue.push(value);
         queue.shift();
     }
+    showHistory();
 }
 //-------------------------------------e-n-d---o-f---H-i-s-t-o-r-y-------------------------//
+
+
+//------------------------------------S-h-o-w---H-i-s-t-o-r-y---------------------------------------//
+function showHistory(){
+    for (let i = 1; i <= history.length; i++) {
+        document.getElementById("historyImg" + i).src="./images/icons/" + history[i - 1].name.toLowerCase() + ".png";
+        writeById("historyName" + i, history[i - 1].name)
+        writeById("historyPrimaryName" + i, history[i - 1].primary[0])
+        // writeById("historyPrimaryScope" + i, history[i - 1].primary[1])
+        // writeById("historyPrimaryBarrel" + i, history[i - 1].primary[1])
+        // writeById("historyPrimaryLaser" + i, history[i - 1].primary[1])
+        // writeById("historyPrimaryGrip" + i, history[i - 1].primary[1])
+        writeById("historySecondaryName" + i, history[i - 1].secondary[0])
+        // writeById("historySecondaryScope" + i, history[i - 1].primary[1])
+        // writeById("historySecondaryBarrel" + i, history[i - 1].primary[1])
+        // writeById("historySecondaryLaser" + i, history[i - 1].primary[1])
+        // writeById("historySecondaryGrip" + i, history[i - 1].primary[1])
+        writeById("historyGadget" + i, history[i - 1].gadget[0])
+    }
+}
+//-------------------------------------e-n-d---o-f---S-h-o-w---H-i-s-t-o-r-y-------------------------//
 
 
 //-------------------------------------F-i-l-t-e-r---------------------------------------//

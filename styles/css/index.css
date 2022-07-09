@@ -13,15 +13,12 @@ body {
   background-size: cover;
   background-color: black;
 }
-
 body *::-webkit-scrollbar {
   width: 16px;
 }
-
 body *::-webkit-scrollbar-track {
   background: transparent;
 }
-
 body *::-webkit-scrollbar-thumb {
   background-color: #ffffff;
   border-radius: 10px;
@@ -66,7 +63,6 @@ body *::-webkit-scrollbar-thumb {
   font-weight: 500;
   background: transparent;
   outline: none !important;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: inline-block;
   border: 2px solid white;
@@ -75,7 +71,6 @@ body *::-webkit-scrollbar-thumb {
   position: absolute;
   cursor: pointer;
 }
-
 .Shuffle:after {
   position: absolute;
   content: "";
@@ -85,14 +80,12 @@ body *::-webkit-scrollbar-thumb {
   left: 0;
   z-index: -1;
   background: white;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .Shuffle:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
-
 .Shuffle:hover:after {
   top: auto;
   bottom: 0;
@@ -120,13 +113,8 @@ body *::-webkit-scrollbar-thumb {
 }
 
 .lineUp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   top: 50%;
   left: 50%;
   margin-top: 170px;
@@ -150,7 +138,7 @@ body *::-webkit-scrollbar-thumb {
   display: block;
   height: 5px;
   width: 100%;
-  background: white;
+  background: rgb(255, 255, 255);
   margin: 10px auto;
   opacity: 0.35;
 }
@@ -160,7 +148,7 @@ body *::-webkit-scrollbar-thumb {
   display: block;
   height: 5px;
   width: 100%;
-  background: white;
+  background: rgb(255, 255, 255);
   margin: 10px auto;
 }
 
@@ -168,7 +156,7 @@ body *::-webkit-scrollbar-thumb {
   background: none;
   border: none;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: x-large;
   cursor: pointer;
   padding: 0;
@@ -184,26 +172,20 @@ body *::-webkit-scrollbar-thumb {
   height: calc(85% + 75vh);
   position: absolute;
   left: 0;
-  top: calc(100% + .25rem);
+  top: calc(100% + 0.25rem);
   background-color: rgba(0, 0, 0, 0.5);
-  padding: .75rem;
-  border-radius: .25rem;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
-  transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
 }
 
 .dropdown.active > .show + .dropdown-menu {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -223,16 +205,12 @@ body *::-webkit-scrollbar-thumb {
 
 .disable:hover:after {
   opacity: 1;
-  -webkit-transform: translateY(0) rotateX(0);
-          transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
 }
-
 .disable:hover:before {
   opacity: 0;
-  -webkit-transform: translateY(50%) rotateX(90deg);
-          transform: translateY(50%) rotateX(90deg);
+  transform: translateY(50%) rotateX(90deg);
 }
-
 .disable:after {
   top: 0;
   left: 0;
@@ -240,15 +218,12 @@ body *::-webkit-scrollbar-thumb {
   width: 100%;
   color: #242729;
   display: block;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
   position: absolute;
   background: #adadaf;
   content: attr(data-dis);
-  -webkit-transform: translateY(-50%) rotateX(90deg);
-          transform: translateY(-50%) rotateX(90deg);
+  transform: translateY(-50%) rotateX(90deg);
 }
-
 .disable:before {
   top: 0;
   left: 0;
@@ -256,27 +231,21 @@ body *::-webkit-scrollbar-thumb {
   color: #adadaf;
   display: block;
   line-height: 40px;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
   position: relative;
   background: #242729;
   content: attr(data-ened);
-  -webkit-transform: translateY(0) rotateX(0);
-          transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
 }
 
 .enable:hover:after {
   opacity: 0;
-  -webkit-transform: translateY(50%) rotateX(90deg);
-          transform: translateY(50%) rotateX(90deg);
+  transform: translateY(50%) rotateX(90deg);
 }
-
 .enable:hover:before {
   opacity: 1;
-  -webkit-transform: translateY(0) rotateX(0);
-          transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
 }
-
 .enable:after {
   top: 0;
   left: 0;
@@ -284,15 +253,12 @@ body *::-webkit-scrollbar-thumb {
   color: #242729;
   display: block;
   line-height: 40px;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
   position: relative;
   background: #adadaf;
   content: attr(data-dised);
-  -webkit-transform: translateY(0) rotateX(0);
-          transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
 }
-
 .enable:before {
   top: 0;
   left: 0;
@@ -300,21 +266,17 @@ body *::-webkit-scrollbar-thumb {
   width: 100%;
   color: #adadaf;
   display: block;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
   position: absolute;
   background: #242729;
   content: attr(data-en);
-  -webkit-transform: translateY(-50%) rotateX(90deg);
-          transform: translateY(-50%) rotateX(90deg);
+  transform: translateY(-50%) rotateX(90deg);
 }
 
 .filterContent {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (max-content)[2];
-      grid-template-columns: repeat(2, -webkit-max-content);
-      grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
   overflow-y: scroll;
   min-width: 200px;
   padding-right: 0;
@@ -324,9 +286,7 @@ body *::-webkit-scrollbar-thumb {
   height: 60px;
   width: 60px;
 }
-
 .filterImg:hover {
-  -webkit-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
   cursor: pointer;
   height: 65px;
@@ -336,10 +296,8 @@ body *::-webkit-scrollbar-thumb {
 .filterImgDis {
   height: 50px;
   width: 50px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
-
 .filterImgDis:hover {
   cursor: pointer;
 }
@@ -351,6 +309,36 @@ body *::-webkit-scrollbar-thumb {
 tr {
   height: 68px;
   width: auto;
+}
+
+.history {
+  position: absolute;
+  top: 4.5%;
+  left: 87%;
+  font-size: 12px;
+}
+
+.historyWrap {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  border: 1px solid #ffffff;
+  height: 115px;
+  width: 205px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.historyName {
+  position: relative;
+  top: 90px;
+  left: -77px;
+}
+
+.historyImg {
+  height: 101px;
+  width: 101px;
 }
 
 .switch {
@@ -382,7 +370,6 @@ tr {
   position: absolute;
   top: 97%;
   left: 96%;
-  color: #b8b8b8;
+  color: rgb(184, 184, 184);
   font-size: x-small;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
