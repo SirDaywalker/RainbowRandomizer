@@ -6,8 +6,7 @@ let history = [];
 function shuffle() {
     let op = operators;
 
-    if (getValue() != null) {op = op[getValue()];}
-    else {op = op[0].concat(op[1]);}
+    getValue() == null ? (op = op[0].concat(op[1])) : (op = op[getValue()]);
 
     op = readoutFilter(op);
 
@@ -70,7 +69,7 @@ function showHistory(){
             let e = document.getElementsByClassName("historyWrapDis");
             e[e.length - 1].className = "historyWrap"; 
         } 
-        catch (error) {}
+        catch (err) {}
     }
         
     for (let i = 1; i <= history.length; i++) {

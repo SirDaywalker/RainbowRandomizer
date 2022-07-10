@@ -40,4 +40,14 @@ function disableAllFilterImages(el){
         }
         el.className = "disable";
     }
-} 
+}
+
+function reveal(){
+    try {
+        let el = document.getElementsByClassName('PicsDis');
+        for (let i = 0; i < el.length; i++) {
+           el[i].className = "Pics";
+        }
+    } 
+    catch (err) {}
+}
