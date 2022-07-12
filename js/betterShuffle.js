@@ -12,17 +12,10 @@ function shuffle() {
 
     op = op[random(op.length)];
 
-    //images
-    document.getElementById("opPic").src="./images/Ops/" + op.name.toLowerCase() + ".png";
-    document.getElementById("icon").src="./images/icons/" + op.name.toLowerCase() + ".png";
+    let operator = new Operator(op.name, op.primary[random(op.primary.length)], op.secondary[random(op.secondary.length)], op.gadget[random(op.gadget.length)] );
+    operator.setProps();
 
-    //text
-    writeById("opName", op.name);
-    writeById("primary", op.primary[random(op.primary.length)]);
-    writeById("secondary", op.secondary[random(op.secondary.length)]);
-    writeById("gadget", op.gadget[random(op.gadget.length)]);
-
-    queueIt(op, history);
+    queueIt(operator);
 }
 //-------------------------------------e-n-d---o-f---s-h-u-f-f-l-e--------------------------------------//
 
@@ -44,13 +37,13 @@ async function fetchOps(a) {
 
 
 //-------------------------------------H-i-s-t-o-r-y---------------------------------------//
-function queueIt(value, queue){
-    if(queue.length < 5){
-        queue.push(value);
+function queueIt(value){
+    if(history.length < 5){
+        history.push(value);
     }
     else{
-        queue.push(value);
-        queue.shift();
+        history.push(value);
+        history.shift();
     }
     showHistory();
 }
@@ -75,17 +68,17 @@ function showHistory(){
     for (let i = 1; i <= history.length; i++) {
         document.getElementById("historyImg" + i).src="./images/icons/" + history[i - 1].name.toLowerCase() + ".png";
         writeById("historyName" + i, history[i - 1].name);
-        writeById("historyPrimaryName" + i, history[i - 1].primary[0]);
-        // writeById("historyPrimaryScope" + i, history[i - 1].primary[0]);
-        // writeById("historyPrimaryBarrel" + i, history[i - 1].primary[0]);
-        // writeById("historyPrimaryLaser" + i, history[i - 1].primary[0]);
-        // writeById("historyPrimaryGrip" + i, history[i - 1].primary[0]);
-        writeById("historySecondaryName" + i, history[i - 1].secondary[0]);
-        // writeById("historySecondaryScope" + i, history[i - 1].primary[0]);
-        // writeById("historySecondaryBarrel" + i, history[i - 1].primary[0]);
-        // writeById("historySecondaryLaser" + i, history[i - 1].primary[0]);
-        // writeById("historySecondaryGrip" + i, history[i - 1].primary[0]);
-        writeById("historyGadget" + i, history[i - 1].gadget[0]);
+        writeById("historyPrimaryName" + i, history[i - 1].primary);
+        // writeById("historyPrimaryScope" + i, history[i - 1].primary);
+        // writeById("historyPrimaryBarrel" + i, history[i - 1].primary);
+        // writeById("historyPrimaryLaser" + i, history[i - 1].primary);
+        // writeById("historyPrimaryGrip" + i, history[i - 1].primary);
+        writeById("historySecondaryName" + i, history[i - 1].secondary);
+        // writeById("historySecondaryScope" + i, history[i - 1].primary);
+        // writeById("historySecondaryBarrel" + i, history[i - 1].primary);
+        // writeById("historySecondaryLaser" + i, history[i - 1].primary);
+        // writeById("historySecondaryGrip" + i, history[i - 1].primary);
+        writeById("historyGadget" + i, history[i - 1].gadget);
     } 
 }
 //-------------------------------------e-n-d---o-f---S-h-o-w---H-i-s-t-o-r-y-------------------------//
@@ -126,3 +119,25 @@ function writeById(id, message) { return document.getElementById(id).innerHTML =
 //------------------------------------r-a-n-d-o-m-i-z-e---L-o-a-d-o-u-t-------------------//
 function random(max) { return Math.floor(Math.random() * max); }
 //-------------------------------------e-n-d---o-f---L-o-a-d-o-u-t-----------------------//
+
+
+//---------------------------------O-p-e-r-a-t-o-r--C-l-a-s-s-------------------//
+class Operator{
+    constructor(name, primary, secondary, gadget){
+        this.name = name;
+        this.primary = primary;
+        this.secondary = secondary;
+        this.gadget = gadget;
+    }
+
+    setProps(){
+        document.getElementById("opPic").src="./images/Ops/" + this.name.toLowerCase() + ".png";
+        document.getElementById("icon").src="./images/icons/" + this.name.toLowerCase() + ".png";
+
+        writeById("opName", this.name);
+        writeById("primary", this.primary);
+        writeById("secondary", this.secondary);
+        writeById("gadget", this.gadget);
+    }
+}
+//--------------------------------O-p-e-r-a-t-o-r--C-l-a-s-s-------------------//
