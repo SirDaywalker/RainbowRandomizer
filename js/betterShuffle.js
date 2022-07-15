@@ -2,19 +2,33 @@ let operators;
 fetchOps();
 let history = [];
 
+let defaultAttachments = {"Scope": ["no Scope", "Red Dot A", "Red Dot B", "Red Dot C", "Holo A", "Holo B", "Holo C", "Holo D", "Reflex A", "Reflex B", "Reflex C"],
+                          "Grip": ["no Grip", "vertical Grip", "angled Grip"],
+                          "Barrel": ["no Barrel", "Suppressor", "Muzzle Brake", "Compensator", "Flash Hider"],
+                          "UnderBarrel": ["no Laser", "Laser"]
+                        }
+
 //-------------------------------------s-h-u-f-f-l-e---------------------------------------//
 function shuffle() {
+    // sets this variable equal to json obj
     let op = operators;
 
+    // gets if it is atk or def or both
     getValue() == null ? (op = op[0].concat(op[1])) : (op = op[getValue()]);
 
+    // reads out the filter and removes banned ops
     op = readoutFilter(op);
 
+    // get a random op as json obj
     op = op[random(op.length)];
 
+    // create a new Operator obj and sets its weapons random
     let operator = new Operator(op.name, op.primary[random(op.primary.length)], op.secondary[random(op.secondary.length)], op.gadget[random(op.gadget.length)] );
+    
+    // displays the weapons
     operator.setProps();
 
+    // put it into the Historyqueue
     queueIt(operator);
 }
 //-------------------------------------e-n-d---o-f---s-h-u-f-f-l-e--------------------------------------//
@@ -61,7 +75,7 @@ function showHistory(){
             let e = document.getElementsByClassName("historyWrapDis");
             e[e.length - 1].className = "historyWrap"; 
         } 
-        catch (err) {}
+        catch {}
     }
         
     for (let i = 1; i <= history.length; i++) {
