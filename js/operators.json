@@ -2,200 +2,1249 @@
     [
         {
             "name": "Recruit",
-            "primary": ["M249", "Mk 14 EBR", "L85A2"],
-            "secondary": ["P12", "Super Shorty", "C75 Auto"],
+            "primary": [
+                        {
+                            "name": "M249",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                        },
+                        {
+                            "name": "Mk 14 EBR",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                        },
+                        {
+                            "name": "L85A2",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P12",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                          },
+                          {
+                            "name": "Super Shorty",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                          },
+                          {
+                            "name": "C75 Auto",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                          }
+                         ],
+                         
             "gadget": ["Frag Grenades", "Smoke Grenade", "Hard Breach Charge"]
         },
         {
             "name": "Sledge",
-            "primary": ["M590A1", "L85A2"],
-            "secondary": ["P226 Mk 25"],
+            "primary": [
+                        {
+                            "name": "M590A1",
+                            "scope": "",
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "L85A2",
+                            "scope": ["Scope 1.5x", "Scope 2.5x A", "Scope 2.5x B"],
+                            "grip": ["angled Grip"],
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P226 Mk 25",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Frag Grenades", "Stun Grenades"]
         },
         {
             "name": "Thatcher",
-            "primary": ["AR33", "L85A2", "M590A1"],
-            "secondary": ["P226 Mk 25"],
+            "primary": [
+                        {
+                            "name": "AR33",
+                            "scope": ["Scope 1.5x", "Scope 2.5x A", "Scope 2.5x B"],
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "L85A2",
+                            "scope": ["Scope 2.5x A", "Scope 2.5x B"],
+                            "grip": ["angled Grip"],
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M590A1",
+                            "scope": "",
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P226 Mk 25",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Claymore", "Breach Charges"]
         },
         {
             "name": "Ash",
-            "primary": ["G36C", "R4-C"],
-            "secondary": ["M45 MEUSOC", "5.7 USG"],
+            "primary": [
+                        {
+                            "name": "G36C",
+                            "scope": ["Scope 1.5x"],
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "R4-C",
+                            "scope": "",
+                            "grip": ["angled Grip"],
+                            "barrel": ["extended Barrel"],
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "M45 MEUSOC",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "5.7 USG",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Claymore", "Breach Charges"]
         },
         {
             "name": "Thermite",
-            "primary": ["M1014", "556xi"],
-            "secondary": ["M45 MEUSOC", "5.7 USG"],
+            "primary": [
+                        {
+                            "name": "M1014",
+                            "scope": "",
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "556xi",
+                            "scope": ["Scope 2.5x A", "Scope 2.5x B"],
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "M45 MEUSOC",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "5.7 USG",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Stun Grenade", "Smoke Grenade"]
         },
         {
             "name": "Twitch",
-            "primary": ["F2", "417", "SG-CQB"],
-            "secondary": ["P9", "LFP586"],
+            "primary": [
+                        {
+                            "name": "F2",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "417",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SG-CQB",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P9",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "LFP586",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Claymore", "Smoke Grenade"]
         },
         {
             "name": "Montagne",
-            "primary": ["\"Le Roc\" Extendable Shield"],
-            "secondary": ["P9", "LFP586"],
+            "primary": [
+                        {
+                            "name": "\"Le Roc\" Extendable Shield",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P9",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "LFP586",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Hard Breach Charge", "Smoke Grenade"]
         },
         {
             "name": "Glaz",
-            "primary": ["OTs-03"],
-            "secondary": ["PMM", "GONNE-6", "Bearing 9"],
-            "gadget": ["Frag Grenade", "Smoke Grenade"]
+            "primary": [
+                        {
+                            "name": "OTs-03",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "PMM",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GONNE-6",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                          },
+                          {
+                            "name": "Bearing 9",
+                            "scope": "",
+                            "grip": null,
+                            "barrel": ["Compensator"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
+            "gadget": ["Frag Grenades", "Smoke Grenade"]
         },
         {
             "name": "Fuze",
-            "primary": ["Ballistic Shield", "6P41", "AK-12"],
-            "secondary": ["PMM", "GSh-18"],
+            "primary": [
+                        {
+                            "name": "Ballistic Shield",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "6P41",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "AK-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "PMM",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GSh-18",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": null
+                          }
+                         ],
+                         
             "gadget": ["Breach Charge", "Hard Breach Charge"]
         },
         {
             "name": "Blitz",
-            "primary": ["G52-Tactical Shield"],
-            "secondary": ["P12"],
+            "primary": [
+                        {
+                            "name": "G52-Tactical Shield",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P12",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Breach Charge", "Smoke Grenade"]
         },
         {
             "name": "IQ",
-            "primary": ["AUG A2", "552 Commando", "G8A1"],
-            "secondary": ["P12"],
+            "primary": [
+                        {
+                            "name": "AUG A2",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "552 Commando",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "G8A1",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P12",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Breach Charge", "Claymore"]
         },
         {
             "name": "Buck",
-            "primary": ["C8-SFW", "CAMRS"],
-            "secondary": ["Mk1 9mm"],
+            "primary": [
+                        {
+                            "name": "C8-SFW",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "CAMRS",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Mk1 9mm",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Stun Grenade", "Hard Breach Charge"]
         },
         {
             "name": "Blackbeard",
-            "primary": ["Mk17 CQB", "SR-25"],
-            "secondary": ["D-50"],
+            "primary": [
+                        {
+                            "name": "Mk17 CQB",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SR-25",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "D-50",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Stun Grenade", "Claymore"]
         },
         {
             "name": "Capitão",
-            "primary": ["PARA-308", "M249"],
-            "secondary": ["PRB92"],
+            "primary": [
+                        {
+                            "name": "PARA-308",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M249",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "PRB92",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Hard Breach Charge", "Claymore"]
         },
         {
             "name": "Hibana",
-            "primary": ["Type-89", "SuperNova"],
-            "secondary": ["P229", "Bearing 9"],
+            "primary": [
+                        {
+                            "name": "Type-89",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SuperNova",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P229",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Bearing 9",
+                            "scope": "",
+                            "grip": null,
+                            "barrel": ["Compensator"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Hard Breach Charge", "Breach Charge"]
         },
         {
             "name": "Jackal",
-            "primary": ["C7E", "PDW9", "ITA12L"],
-            "secondary": ["ITA12S", "USP40"],
+            "primary": [
+                        {
+                            "name": "C7E",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "PDW9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "ITA12L",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "ITA12S",
+                            "scope": "",
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "USP40",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Claymore", "Smoke Grenade"]
         },
         {
             "name": "Ying",
-            "primary": ["T-95 LSW", "SIX12"],
-            "secondary": ["Q-929"],
+            "primary": [
+                        {
+                            "name": "T-95 LSW",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SIX12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Q-929",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Hard Breach Charge", "Smoke Grenade"]
         },
         {
             "name": "Zofia",
-            "primary": ["LMG-E", "M762"],
-            "secondary": ["RG15"],
+            "primary": [
+                        {
+                            "name": "LMG-E",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M762",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "RG15",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Breach Charge", "Claymore"]
         },
         {
             "name": "Dokkaebi",
-            "primary": ["Mk 14 EBR", "BOSG.12.2"],
-            "secondary": ["GONNE-6", "SMG-12", "C75-Auto"],
+            "primary": [
+                        {
+                            "name": "Mk 14 EBR",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "BOSG.12.2",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "GONNE-6",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                          },
+                          {
+                            "name": "SMG-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": null,
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "C75-Auto",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Muzzle Brake", "Compensator", "Flash Hider"],
+                            "underBarrel": null
+                          }
+                         ],
+                         
             "gadget": ["Smoke Grenade", "Stun Grenade"]
         },
         {
             "name": "Lion",
-            "primary": ["V308", "417", "SG-CQB"],
-            "secondary": ["GONNE-6", "LFP586", "P9"],
+            "primary": [
+                        {
+                            "name": "V308",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "417",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SG-CQB",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "GONNE-6",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": null
+                          },
+                          {
+                            "name": "LFP586",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": null,
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "P9",
+                            "scope": null,
+                            "grip": null,
+                            "barrel": ["Compensator", "Flash Hider"],
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Stun Grenade", "Claymore"]
         },
         {
             "name": "Finka",
-            "primary": ["Spear .308", "6P41", "SASG-12"],
-            "secondary": ["GONNE-6", "PMM", "GSh-18"],
+            "primary": [
+                        {
+                            "name": "Spear .308",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "6P41",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SASG-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "GONNE-6",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "PMM",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GSh-18",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Stun Grenade", "Frag Grenade"]
         },
         {
             "name": "Maverick",
-            "primary": ["AR-15.50", "M4"],
-            "secondary": ["1911 TACOPS"],
+            "primary": [
+                        {
+                            "name": "AR-15.50",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M4",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "1911 TACOPS",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Claymore", "Frag Grenade"]
         },
         {
             "name": "Nomad",
-            "primary": ["AK-74M", "ARX200"],
-            "secondary": [".44 Mag Semi-Auto","PRB92"],
+            "primary": [
+                        {
+                            "name": "AK-74M",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "ARX200",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": ".44 Mag Semi-Auto",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "PRB92",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Breach Charge", "Stun Grenade"]
         },
         {
             "name": "Gridlock",
-            "primary": ["F90", "M249 SAW"],
-            "secondary": ["Super Shorty", "GONNE-6", "SDP 9mm"],
+            "primary": [
+                        {
+                            "name": "F90",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M249 SAW",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "GONNE-6",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Super Shorty",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SDP 9mm",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Smoke Grenade", "Breach Charge"]
         },
         {
             "name": "Nøkk",
-            "primary": ["FMG-9", "SIX12 SD"],
-            "secondary": ["5.7 USG", "D-50"],
+            "primary": [
+                        {
+                            "name": "FMG-9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SIX12 SD",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "5.7 USG",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "D-50",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Frag Grenades", "Hard Breach Charge"]
         },
         {
             "name": "Amaru",
-            "primary": ["G8A1", "SuperNova"],
-            "secondary": ["GONNE-6", "SMG11", "ITA12S"],
+            "primary": [
+                        {
+                            "name": "G8A1",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SuperNova",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "GONNE-6",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SMG11",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "ITA12S",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Hard Breach Charge", "Stun Grenade"]
         },
         {
             "name": "Kali",
-            "primary": ["CSRX 300"],
-            "secondary": ["C75 Auto", "SPSMG9" ,"P226 Mk 25"],
+            "primary": [
+                        {
+                            "name": "CSRX 300",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "C75 Auto",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SPSMG9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "P226 Mk 25",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Breach Charge", "Claymore"]
         },
         {
             "name": "Iana",
-            "primary": ["ARX200", "G36C"],
-            "secondary": ["Mk1 9mm", "GONNE-6"],
+            "primary": [
+                        {
+                            "name": "ARX200",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "G36C",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Mk1 9mm",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GONNE-6",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Frag Grenade", "Smoke Grenade"]
         },
         {
             "name": "Ace",
-            "primary": ["AK-12", "M1014"],
-            "secondary": ["P9"],
+            "primary": [
+                        {
+                            "name": "AK-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M1014",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Breach Charge", "Claymore"]
         },
         {
             "name": "Zero",
-            "primary": ["SC3000K", "MP7"],
-            "secondary": ["5.7 USG", "GONNE-6"],
+            "primary": [
+                        {
+                            "name": "SC3000K",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "MP7",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "5.7 USG",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GONNE-6",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Hard Breach Charge", "Claymore"]
         },
         {
             "name": "Flores",
-            "primary": ["AR33", "SR-25"],
-            "secondary": ["GSh-18"],
+            "primary": [
+                        {
+                            "name": "AR33",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SR-25",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "GSh-18",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Stun Grenade", "Claymore"]
         },
         {
             "name": "Osa",
-            "primary": ["556XI", "PDW9"],
-            "secondary": ["PMM"],
+            "primary": [
+                        {
+                            "name": "556XI",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "PDW9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "PMM",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Smoke Grenade", "Claymore"]
         },
         {
             "name": "Sens",
-            "primary": ["POF9", "417"],
-            "secondary": ["SDP 9mm", "GONNE-6"],
+            "primary": [
+                        {
+                            "name": "POF9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "417",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "SDP 9mm",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GONNE-6",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Hard Breach Charge", "Claymore"]
         }
     ],
@@ -203,201 +1252,1200 @@
     [
         {
             "name": "Recruit",
-            "primary": ["MP5K", "M870"],
-            "secondary": ["P9", "SMG-11"],
+            "primary": [
+                        {
+                            "name": "MP5K",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M870",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SMG-11",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Nitro Cell", "Impact Grenade", "Proximity Alarm"]
         },
         {
             "name": "Smoke",
-            "primary": ["FMG-9", "M590A1"],
-            "secondary": ["P226 Mk 25", "SMG-11"],
+            "primary": [
+                        {
+                            "name": "FMG-9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M590A1",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P226 Mk 25",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SMG-11",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Deployable Shield", "Barbed Wire"]
         },
         {
             "name": "Mute",
-            "primary": ["MP5K", "M590A1"],
-            "secondary": ["P226 Mk 25", "SMG-11"],
+            "primary": [
+                        {
+                            "name": "MP5K",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M590A1",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P226 Mk 25",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SMG-11",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Nitro Cell", "Bulletproof Camera"]
         },
         {
             "name": "Castle",
-            "primary": ["UMP45", "M1014"],
-            "secondary": ["5.7 USG", "Super Shorty"],
+            "primary": [
+                        {
+                            "name": "UMP45",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M1014",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "5.7 USG",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Super Shorty",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Proximity Alarm", "Bulletproof Camera"]
         },
         {
             "name": "Pulse",
-            "primary": ["UMP45", "M1014"],
-            "secondary": ["5.7 USG", "M45 MEUSOC"],
+            "primary": [
+                        {
+                            "name": "UMP45",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M1014",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "5.7 USG",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "M45 MEUSOC",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Nitro Cell"]
         },
         {
             "name": "Doc",
-            "primary": ["SG-CQB", "MP5", "P90"],
-            "secondary": ["P9", "LFP586"],
+            "primary": [
+                        {
+                            "name": "SG-CQB",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "MP5",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "P90",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "LFP586",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Bulletproof Camera"]
         },
         {
             "name": "Rook",
-            "primary": ["SG-CQB", "MP5", "P90"],
-            "secondary": ["P9", "LFP586"],
+            "primary": [
+                        {
+                            "name": "SG-CQB",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "MP5",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "P90",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "LFP586",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Proximity Alarm", "Impact Grenade"]
         },
         {
             "name": "Kapkan",
-            "primary": ["9×19VSN", "SASG-12"],
-            "secondary": ["PMM", "GSh-18"],
+            "primary": [
+                        {
+                            "name": "9×19VSN",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SASG-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "PMM",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GSh-18",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Impact Grenade", "Nitro Cell"]
         },
         {
             "name": "Tachanka",
-            "primary": ["DP27", "9×19VSN"],
-            "secondary": ["PMM", "GSh-18", "Bearing 9"],
+            "primary": [
+                        {
+                            "name": "DP27",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "9×19VSN",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "PMM",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "GSh-18",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Bearing 9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Deployable Shield", "Barbed Wire"]
         },
         {
             "name": "Jäger",
-            "primary": ["M870", "416-C Carbine"],
-            "secondary": ["P12"],
+            "primary": [
+                        {
+                            "name": "M870",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "416-C Carbine",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Bulletproof Camera", "Barbed Wire"]
         },
         {
             "name": "Bandit",
-            "primary": ["M870", "MP7"],
-            "secondary": ["P12"],
+            "primary": [
+                        {
+                            "name": "M870",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "MP7",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Nitro Cell", "Barbed Wire"]
         },
         {
             "name": "Frost",
-            "primary": ["Super 90", "9mm C1"],
-            "secondary": ["Mk1 9mm", "ITA12S"],
+            "primary": [
+                        {
+                            "name": "Super 90",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "9mm C1",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Mk1 9mm",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "ITA12S",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Bulletproof Camera", "Deployable Shield"]
         },
         {
             "name": "Valkyrie",
-            "primary": ["MPX", "SPAS-12"],
-            "secondary": ["D-50"],
+            "primary": [
+                        {
+                            "name": "MPX",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SPAS-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "D-50",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Impact Grenade", "Nitro Cell"]
         },
         {
             "name": "Caveira",
-            "primary": ["M12", "SPAS-15"],
-            "secondary": ["Luison"],
+            "primary": [
+                        {
+                            "name": "M12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SPAS-15",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Luison",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Impact Grenade", "Proximity Alarm"]
         },
         {
             "name": "Echo",
-            "primary": ["SuperNova", "MP5SD"],
-            "secondary": ["P229", "Bearing 9"],
+            "primary": [
+                        {
+                            "name": "SuperNova",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "MP5SD",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P229",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Bearing 9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Impact Grenade", "Deployable Shield"]
         },
         {
             "name": "Mira",
-            "primary": ["Vector .45 ACP", "ITA12L"],
-            "secondary": ["ITA12S", "USP40"],
+            "primary": [
+                        {
+                            "name": "Vector .45 ACP",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "ITA12L",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "ITA12S",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "USP40",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Proximity Alarm", "Nitro Cell"]
         },
         {
             "name": "Lesion",
-            "primary": ["SIX12 SD", "T-5 SMG"],
-            "secondary": ["Q-929"],
+            "primary": [
+                        {
+                            "name": "SIX12 SD",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "T-5 SMG",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Q-929",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Bulletproof Camera", "Impact Grenade"]
         },
         {
             "name": "Ela",
-            "primary": ["Scorpion EVO 3 A1", "FO-12"],
-            "secondary": ["RG15"],
+            "primary": [
+                        {
+                            "name": "Scorpion EVO 3 A1",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "FO-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "RG15",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Deployable Shield"]
         },
         {
             "name": "Vigil",
-            "primary": ["K1A", "BOSG.12.2"],
-            "secondary": ["C75-Auto", "SMG-12"],
+            "primary": [
+                        {
+                            "name": "K1A",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "BOSG.12.2",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "C75 Auto",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SMG-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Bulletproof Camera", "Impact Grenade"]
         },
         {
             "name": "Maestro",
-            "primary": ["ALDA 5.56", "ACS12"],
-            "secondary": ["Bailiff 410", "Keratos .357"],
+            "primary": [
+                        {
+                            "name": "ALDA 5.56",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "ACS12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Bailiff 410",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Keratos .357",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Impact Grenade"]
         },
         {
             "name": "Alibi",
-            "primary": ["Mx4 Storm", "ACS12"],
-            "secondary": ["Bailiff 410", "Keratos .357"],
+            "primary": [
+                        {
+                            "name": "Mx4 Storm",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "ACS12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Bailiff 410",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Keratos .357",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Deployable Shield", "Impact Grenade"]
         },
         {
             "name": "Clash",
-            "primary": ["CCE Shield"],
-            "secondary": ["Super Shorty", "SPSMG9", "P-10C"],
+            "primary": [
+                        {
+                            "name": "CCE Shield",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Super Shorty",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SPSMG9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "P-10C",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Impact Grenade"]
         },
         {
             "name": "Kaid",
-            "primary": ["AUG A3", "TCSG12"],
-            "secondary": [".44 Mag Semi-Auto", "LFP586"],
+            "primary": [
+                        {
+                            "name": "AUG A3",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "TCSG12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": ".44 Mag Semi-Auto",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "LFP586",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Nitro Cell"]
         },
         {
             "name": "Mozzie",
-            "primary": ["Commando 9", "P10 RONI"],
-            "secondary": ["SDP 9mm"],
+            "primary": [
+                        {
+                            "name": "Commando 9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "P10 RONI",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "SDP 9mm",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Nitro Cell"]
         },
         {
             "name": "Warden",
-            "primary": ["M590A1", "MPX"],
-            "secondary": ["P-10C", "SMG-12"],
+            "primary": [
+                        {
+                            "name": "M590A1",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "MPX",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P-10C",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "SMG-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Deployable Shield", "Nitro Cell"]
         },
         {
             "name": "Goyo",
-            "primary": ["Vector .45 ACP", "TCSG12"],
-            "secondary": ["P229"],
+            "primary": [
+                        {
+                            "name": "Vector .45 ACP",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "TCSG12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "P229",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Proximity Alarm", "Nitro Cell"]
         },
         {
             "name": "Wamai",
-            "primary": ["AUG A2", "MP5K"],
-            "secondary": ["Keratos .357", "P12"],
+            "primary": [
+                        {
+                            "name": "AUG A2",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "MP5K",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Keratos .357",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "P12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Proximity Alarm", "Impact Grenade"]
         },
         {
             "name": "Oryx",
-            "primary": ["T-5 SMG", "SPAS-12"],
-            "secondary": ["Bailiff 410", "USP40"],
-            "gadget": ["Barbed Wire", "Proximity Alarm"]
+            "primary": [
+                        {
+                            "name": "T-5 SMG",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SPAS-12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
 
+            "secondary": [
+                          {
+                            "name": "Bailiff 410",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "USP40",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
+            "gadget": ["Barbed Wire", "Proximity Alarm"]
         },
         {
             "name": "Melusi",
-            "primary": ["MP5", "Super 90"],
-            "secondary": ["RG15"],
+            "primary": [
+                        {
+                            "name": "MP5",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "Super 90",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "RG15",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Impact Grenade", "Bulletproof Camera"]
         },
         {
             "name": "Aruni",
-            "primary": ["P10 RONI", "Mk 14 EBR"],
-            "secondary": ["PRB92"],
+            "primary": [
+                        {
+                            "name": "P10 RONI",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "Mk 14 EBR",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "PRB92",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Bulletproof Camera"]
         },
         {
             "name": "Thunderbird",
-            "primary": ["Spear .308", "SPAS-15"],
-            "secondary": ["Q-929", "Bearing 9"],
+            "primary": [
+                        {
+                            "name": "Spear .308",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "SPAS-15",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "Q-929",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "Bearing 9",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Impact Grenade", "Nitro Cell"]
         },
         {
             "name": "Thorn",
-            "primary": ["UZK50GI", "M870"],
-            "secondary": ["1911 TACOPS", "C75 Auto"],
+            "primary": [
+                        {
+                            "name": "UZK50GI",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "M870",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "1911 TACOPS",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          },
+                          {
+                            "name": "C75 Auto",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Deployable Shield"]
         },
         {
             "name": "Azami",
-            "primary": ["9×19VSN", "ACS12"],
-            "secondary": ["D-50"],
+            "primary": [
+                        {
+                            "name": "9×19VSN",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        },
+                        {
+                            "name": "ACS12",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                        }
+                       ],
+
+            "secondary": [
+                          {
+                            "name": "D-50",
+                            "scope": "",
+                            "grip": "",
+                            "barrel": "",
+                            "underBarrel": ""
+                          }
+                         ],
+                         
             "gadget": ["Barbed Wire", "Impact Grenade"]
         }
     ]
