@@ -154,3 +154,25 @@ class Operator{
     }
 }
 //--------------------------------O-p-e-r-a-t-o-r--C-l-a-s-s-------------------//
+
+
+//---------------------------a-d-d--o-r--d-e-l-e-t-e-------------------//
+function addOrDelete(defaultArr, jsonArr) {
+    for (let i = 0; i < jsonArr.length; i++) {
+        let jOut = 0;
+        for (let j = 0; j < defaultArr.length; j++) {
+            if (jsonArr[i] === defaultArr[j]) {
+                let x = j;
+                if (j === 0) {x = 1;}      
+                defaultArr.splice(j, x);    
+            }
+            jOut = j;
+        }
+        defaultArr.push(jsonArr[i]);
+        if (jsonArr[i] === defaultArr[jOut]) {
+            jsonArr.splice[i, i];
+        }
+    }
+    return defaultArr;    
+}
+//------------------------e-n-d---o-f---a-d-d--o-r--d-e-l-e-t-e-----------------------//
